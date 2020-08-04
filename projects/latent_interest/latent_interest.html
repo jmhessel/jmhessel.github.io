@@ -1,0 +1,103 @@
+<title>What do Vegans do in their Spare Time? Latent Interest Detection in Multi-Community Networks</title>
+<h1>What do Vegans do in their Spare Time? Latent Interest Detection in Multi-Community Networks</h1>
+<p>Jack Hessel, Alexandra Schofield, Lillian Lee, David Mimno</p>
+<h2>Abstract</h2>
+
+<p> Most social network analysis works at the level of interactions
+between users. But the vast growth in size and complexity of social
+networks enables us to examine interactions at larger scale. In this
+work we use a dataset of 76M submissions to the social network Reddit,
+which is organized into distinct sub-communities called subreddits. We
+measure the similarity between entire subreddits both in terms of user
+similarity and topical similarity. Our goal is to find community pairs
+with similar userbases, but dissimilar content; we refer to this type
+of relationship as a "latent interest." Detection of latent interests
+not only provides a perspective on individual users as they shift
+between roles (student, sports fan, political activist) but also gives
+insight into the dynamics of Reddit as a whole. Latent interest
+detection also has potential applications for recommendation systems
+and for researchers examining community evolution. </p>
+
+<h2>So... What do they do in their spare time?</h2>
+<p> Our definition of spare time relates to "latent interests." In
+short, these lists are subreddits where vegans spend a
+lot of time not talking directly about veganism.</p>
+
+<ol>
+<li> <a href=http://reddit.com/r/AnimalRights>AnimalRights</a> </li>
+<li> <a href=http://reddit.com/r/Anarchism>Anarchism</a> </li>
+<li> <a href=http://reddit.com/r/yoga>yoga</a> </li>
+<li> <a href=http://reddit.com/r/VegRecipes>VegRecipes</a> </li>
+<li> <a href=http://reddit.com/r/Feminism>Feminism</a> </li>
+<li> <a href=http://reddit.com/r/environment>environment</a> </li>
+<li> <a href=http://reddit.com/r/philosophy>philosophy</a> </li>
+<li> <a href=http://reddit.com/r/gardening>gardening</a> </li>
+<li> <a href=http://reddit.com/r/bicycling>bicycling</a> </li>
+<li> <a href=http://reddit.com/r/Buddhism>Buddhism</a> </li>
+</ol>
+
+<p> Here are some examples for liberals and conservatives, as well... </p>
+The top latent interests for liberals:
+<ol>
+<li> <a href=http://reddit.com/r/California>California</a> </li>
+<li> <a href=http://reddit.com/r/GunsAreCool>GunsAreCool</a> </li>
+<li> <a href=http://reddit.com/r/Bad_Cop_No_Donut>Bad_Cop_No_Donut</a> </li>
+<li> <a href=http://reddit.com/r/economy>economy</a> </li>
+<li> <a href=http://reddit.com/r/Feminism>Feminism</a> </li>
+<li> <a href=http://reddit.com/r/immigration>immigration</a> </li>
+<li> <a href=http://reddit.com/r/RenewableEnergy>RenewableEnergy</a> </li>
+<li> <a href=http://reddit.com/r/energy>energy</a> </li>
+<li> <a href=http://reddit.com/r/newyork>newyork</a> </li>
+<li> <a href=http://reddit.com/r/democrats>democrats</a> </li>
+</ol>
+
+The top latent interests for conservatives:
+
+<ol>
+<li> <a href=http://reddit.com/r/Bad_Cop_No_Donut>Bad_Cop_No_Donut</a> </li>
+<li> <a href=http://reddit.com/r/guns>guns</a> </li>
+<li> <a href=http://reddit.com/r/Christianity>Christianity</a> </li>
+<li> <a href=http://reddit.com/r/Military>Military</a> </li>
+<li> <a href=http://reddit.com/r/economy>economy</a> </li>
+<li> <a href=http://reddit.com/r/Economics>Economics</a> </li>
+<li> <a href=http://reddit.com/r/Catholicism>Catholicism</a> </li>
+<li> <a href=http://reddit.com/r/progun>progun</a> </li>
+<li> <a href=http://reddit.com/r/climateskeptics>climateskeptics</a> </li>
+<li> <a href=http://reddit.com/r/religion>religion</a> </li>
+</ol>
+
+If you're interested in the latent interests of your favorite subreddit, you can download the full results list <a href="latentInterest.txt">here</a>. For each subreddit, there are the top latent interests (labeled "ALL") and the top latent interests with the top 10 most similar user-wise subreddits disregarded (labeled "JUST LATENT"). Results are presented here in two different ways because controlling for textual similarity still doesn't always produce novel latent interests when compared to a simple "most similar user" baseline.
+
+<h2>Paper Link and Citation</h2>
+
+This paper appeared in the
+<a href=http://stanford.edu/~jugander/NetworksNIPS2015/>NIPS 2015
+Networks Workshop</a>. The arXiv version is available <a href=http://arxiv.org/abs/1511.03371>here</a>.
+
+<h2>Dataset download</h2>
+The readme of the dataset is reproduced here. The ~2GB download is available <a href=https://drive.google.com/file/d/0B_18-8dIYfKNRW9tNWd5clJQVFE/view?usp=sharing>here.</a>
+
+
+<p>A processed subset of data from <a href=https://chenhaot.com/pages/multi-community.html>Tan and Lee (2015)</a>. This is a companion dataset to "What do Vegans do in their Spare Time? Latent Interest Detection in Multi-Community Networks" by Jack Hessel, Alexandra Schofield, Lillian Lee, and David Mimno.</p>
+
+<p>Included here are:
+<ol>
+<li> finalSubs.txt -- a list of ~3.2K subs that both had enough users and enough text posts to analyze. </li>
+<li> redditTextBalanced.txt -- a list of just under 6.6M text posts from the 3.2K subs in finalSubs.txt. Subreddits have a maximum of 5K text posts in this dataset, but prefect "class balance" is not attained just with this limit. </li>
+<li> clusters.txt -- a set of 51 ground truth, potentially overlapping clusters. In the paper, we refer to "37" ground truth clusters. This number arises from from comparing this list to finalSubs.txt, and only considering the 37 clusters for which 4 of their members were in our final set of considered subreddits. </li>
+
+<li> userSims/
+<ol>
+  <li> jaccardSims-sparse.txt -- a list of pairs of subreddits and the jaccard similarity of their submitting-user sets. If a pair is not included in the list, the similarity is zero. </li>
+</ol> </li>
+
+<li> textSims/
+<ol>
+  <li> *-out-all.graph: 1-JSD (as in equation(1) in our paper) between topic distributions for all pairs of subreddits in our considered set. </li>
+</ol> </li>
+</ol>
+
+<h3>Acknowledgements</h3>
+
+This material is based upon work supported by the National Science Foundation under Grant No. 0910664, a Google Research grant, the Cornell Institute for the Social Sciences, and a Cornell University fellowship. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the supporting institutions.
+
