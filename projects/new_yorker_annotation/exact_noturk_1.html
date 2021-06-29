@@ -1,0 +1,1272 @@
+            <html lang="en">
+
+                    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+                    <script type='text/javascript' src='https://s3.amazonaws.com/mturk-public/externalHIT_v1.js'></script>
+
+
+                    <!-- BOOTSTRAP CSS -->
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+                    <!-- HITPUB CSS -->
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+                    <style id="hitpub_css">
+                        /***********************************************
+                        MOSAIC BOOSTRAP OVERWRITES
+                        ***********************************************/
+                        #hitinfo .card {
+                            border-radius: 0;
+                        }
+                        #hitinfo .card:first-child {
+                            border-bottom: 0;
+                        }
+                         #hitinfo button.btn-link {
+                            color: #06486F;
+                            text-decoration: none;
+                         }
+                        #hitinfo button.btn-link:hover {
+                            text-decoration: none;
+                        }
+                        #hit ul.question-choice {
+                            list-style-type: none;
+                        }
+                        /***********************************************
+                        MOSAIC GENERAL STYLING
+                        ***********************************************/
+                         body {
+                             font-family: "Open Sans", "Roboto", sans-serif;
+                         }
+                        textarea#feedback {
+                            width: 100%
+                        }
+                        input#submitButton {
+                            margin: auto;
+                            display: block;
+                            background-color: #2172a4;
+                            color: #fff;
+                            font-size: 1.125rem;
+                            padding: .5rem 1rem;
+                            cursor: pointer;
+                            border-radius: 1rem;
+                        }
+                        input#submitButton:hover {
+                            background-color: #06486F;
+                        }
+                        
+                        .key-term {
+                            font-weight:bold;
+                            font-style:italic;
+                        }
+                        
+                        .key-term1{
+                            color: #0072B2;
+                            font-weight:bold;
+                        }
+                        
+                        .key-term2{
+                            color:#D55E00;
+                            font-weight:bold;
+                        }
+                        
+                        .key-term3{
+                            color: #CC79A7;
+                            font-weight:bold;
+                        }
+
+                    </style>
+
+
+		   <!-- HIT START -->
+                   <div id="hit" class="container">
+                        <div class="col-8 offset-2">
+                            <div class="accordion" id="hitinfo">
+
+                                <!-- INSTRUCTIONS START -->
+                                <div class="card">
+                                    <div class="card-header" id="instructionsHeading">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#instructions" aria-expanded="true" aria-controls="instructions">
+                                                Instructions (click to expand)
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div class="collapse show" id="instructions" aria-labelledby="instructionsHeading" data-parent="#hitinfo">
+                                        <div class="card-body">
+					  <p>Thanks for participating in this HIT! If you are an employee of the University of Washington, we ask that you not partake in this task.</p>
+
+                                          <h3 class="border-top pt-2">Your task:</h3>
+                                          <h6>In this two-part task, you will 1) analyze an image; and 2) explain how three potentially clever/funny statements about the image relate to its contents. </h6>
+
+					  <h3 class="border-top pt-2">Part 1: Analyzing the Image</h3>
+
+					  You'll first <span class="key-term1">describe the image</span> by writing a <i>2-3 sentence summary</i> of the main elements. Consider focusing on:
+					  <ul>
+					    <li> Where is the scene taking place? </li>
+					    <li> Who/what is in the scene? What are they doing? </li>
+					    <li> What objects and actions are being depicted? </li>
+					  </ul>
+
+					  <p>
+					    <i>There's no need to be overly formal, but please do your best to write full, grammatical sentences (see the examples below).</i>
+					  </p>
+
+					  <p>
+					  These images may depict
+					  interesting/unusual
+					  situations. Next, you
+					  will <span class="key-term2">highlight
+					  these uncanny/unusual
+					  elements,</span> by giving a
+					  brief 1-2 sentence
+					  explanation of why they are
+					  uncanny. You may mention
+					  objects/entities that you
+					  addressed in your first
+					  description.  Consider
+					  focusing on:
+					  <ul>
+					    <li> Which objects, actions, entities, etc. are out-of-place? </li>
+					    <li> Are the actions any characters are undertaking strange? </li>
+					    <li> Do the characters have any notable identifying characteristics? </li>
+					  </ul>
+					  </p>
+
+					  <p>
+					  Next, as best you can, you
+					  will draw one or more
+					  bounding boxes around the
+					  unusual elements
+					  that you highligted about. The
+					  goal of drawing the bounding
+					  box is to draw a connection
+					  between what you <span class="key-term2"> highlighted </span> and the image
+					  itself.
+					  </p>
+
+					 <h3 class="border-top pt-2">Part 2: Analyzing the Captions</h3>
+
+					 Next, you will be presented
+					 with <i>three captions</i>
+					 that have been written about
+					 the image. These captions
+					 may:
+					 <ul>
+					   <li> be jokes, refering to humorous aspects of the image; </li>
+					   <li> contain puns, i.e., words/phrases with double meanings; </li>
+					   <li> be quotes that depicted characters said.</li>
+					 </ul>
+
+					 <p>
+					 First,
+					 you'll <strong>indicate
+					 whether or not you understand
+					 how the caption relates to
+					 the image:</strong> it's okay
+					 if you don't, but do give it
+					 some thought --- sometimes,
+					 it can take a second or two
+					 to "get the joke!".
+					 </p>
+
+					 <p>
+					   Next, you'll answer a few basic questions about how the caption relates to the image.
+					   <ol>
+					     <li> You will
+					       indicate if the caption
+					       contains a word or phrase
+					       with a "double meaning,"
+					       i.e., if it contains a pun.
+					     </li>
+
+					     <li> Next, you will highlight which part of the caption is the most important part with your mouse.
+					       If the caption is a pun, try your best to highlight which word or span of words is the most relevant to the pun.
+					     </li>
+
+					     <li> Finally, you will
+					       indicate whether or not
+					       the caption is a
+					       quotation said by a
+					       character depicted in
+					       the scene. If so,
+					       you'll be prompted to
+					       say who is the speaker
+					       and who is the
+					       target.</li>
+					 </ol>
+
+					 </p>
+
+					 <p>
+					 Finally, you'll attempt to
+					 <span class="key-term3">explain the connection
+					 between the caption and the
+					 image in 2-4 sentences.</span> 
+					 <i>Imagine you're explaining to
+					 a friend who doesn't yet "get
+					 the joke," and is having trouble understanding.</i> Consider mentioning:
+					 </p>
+
+					 <ul>
+					   <li> which piece of the caption is clever/funny,</li>
+					   <li> what extra information a naive person might need, e.g., basic, commonsense facts about how the world works, </li>
+					   <li> how the literal image contents relate to the caption, </li>
+					 </ul>
+					 
+					 <p>
+					 <i>Don't be afraid to be verbose;</i> imagine that your friend is having a lot of trouble understanding!
+					 </p>
+
+					 <h4 class="border-top pt-2">Thank you again for participating in this HIT! We really appreciate your work!!</h4>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- INSTRUCTIONS END -->
+
+                                <!-- EXAMPLES START -->
+                                <div class="card">
+                                    <div class="card-header" id="examplesHeading">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#examples" aria-expanded="true" aria-controls="examples">
+                                                Example (click to expand)
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div class="collapse show" id="examples" aria-labelledby="examplesHeading" data-parent="#hitinfo">
+                                        <div class="card-body">
+
+					  <!-- EXAMPLE QUESTION -->
+					  <div class= "row justify-content-center">
+					    <div class="col col-12">
+					      <h3>Part 1: Describe the image</h3>
+					    </div>
+					    <div class="col col-12 row justify-content-center">
+					      <img src="https://jmh-public.s3-us-west-1.amazonaws.com/capcon/newyorker_nextml/new_yorker_nextml_images/497.jpeg" width="90%"/>
+					    </div>
+
+					    <div class="col col-8 row justify-content-center mt-3">
+					      <span class="row key-term1 pl-3">Please describe the contents of the image in 2-3 sentences:</span>
+					    </div>
+					    <div class="col col-12 row justify-content-center mt-3">
+					      <i>A train with a beer is sitting at a bar next to a man. The train is sad and crying. The seated man is glancing at it. </i>
+					    </div>
+
+					    <div class="col col-8 row justify-content-center mt-3">
+					      <span class="row key-term2 pl-3">Please highlight any unusual/out-of-place elements in 1-2 sentences:</span>
+					    </div>
+
+					    <div class="col col-12 row justify-content-center mt-3">
+					      <i>The train is anthropomorphic (i.e., it has a face and is seated at a bar drinking beer), and it's unusual that the train is sad and crying.</i>
+					    </div>
+
+					    <div class="col col-8 row justify-content-center mt-3">
+					      Please highlight the most
+						relevant uncanny region(s) of
+						interest by drawing at least one
+						bounding box on the image
+						below. If you want to delete a
+						box, you can do so by hovering
+						over the box you've drawn, and
+						clicking the X in the top right
+						corner.
+					    </div>
+					    <div class="col col-12 row justify-content-center">
+					      <img src="https://jmh-public.s3-us-west-1.amazonaws.com/capcon/newyorker_nextml/new_yorker_nextml_images/497_with_bbox.jpg" width="70%"/>
+					    </div>
+
+					  </div>
+
+					  <div class="row justify-content-center mt-5">
+					    
+					    <div class="col col-12">
+					      <h3>Part 2: How do the captions relate?</h3>
+					    </div>
+
+					    <div class="col col-12 row justify-content-center mt-3">
+					      <span class="row key-term pl-3">Caption 1: You think *your* life is a trainwreck?</span>
+					    </div>
+
+					    <div class="col col-8 row justify-content-center mt-3">
+					      Is it clear how caption 1 relates to the image?
+					    </div>
+
+					    <div class="btn-group btn-group-toggle col col-7 justify-content-center mt-3" data-toggle="buttons">
+					      <label class="btn btn-primary btn-sm active" for="btn_choice1">
+						<input type="radio" name="likelihood_ex" id="relation_ex1_clear" value="1" autocomplete="off" checked> <u><i><strong> Yes, it's very clear. </strong></i></u>
+					      </label>
+					      <label class="btn btn-primary btn-sm" for="btn_choice1">
+						<input type="radio" name="likelihood_ex" id="relation_ex1_mid" value="2" autocomplete="off">  Somewhat. I can guess.
+					      </label>
+					      <label class="btn btn-primary btn-sm" for="btn_choice1">
+						<input type="radio" name="likelihood_ex" id="relation_ex1_unclear" value="3" autocomplete="off"> I don't see how it's related.
+					      </label>
+					    </div>
+
+					    <div class="form-check mt-3">
+					      <input class="form-check-input" type="checkbox" value="" id="example_pun_check1" onclick="return false;" checked>
+					      <label class="form-check-label active" for="example_pun_check1">
+						This caption contains a word/phrase with a double meaning, i.e., a pun.
+					      </label>
+					    </div>
+
+					    <div class="col col-8 row justify-content-center mt-3">
+					      Use your mouse to highlight which word/phrase is the pun or the most important part of the caption.
+					    </div>
+					    
+					    <div class="col col-7 row justify-content-center mt-3">
+					      <div contenteditable=false>
+						You think *your* life is a <span style="background-color:chartreuse">trainwreck</span>?
+					      </div>
+					      <button type="button">Reset highlighting</button>
+					    </div>
+
+					    <div class="form-check mt-3">
+					      <input class="form-check-input" type="checkbox" value="" id="example_quote_check1" onclick="return false;" checked>
+					      <label class="form-check-label active" for="example_quote_check1">
+						This caption is a quotation that is said by one of the depicted characters.
+					      </label>
+					    </div>
+					    
+					    <div class="col col-8 row justify-content-center mt-3">
+					    The caption is probably said by <input type="text" value="the train" size="15" readonly> directed towards <input type="text" value="the man at the bar" size="15" readonly>.
+					    </div>
+
+					    <div class="col col-8 row justify-content-center mt-3">
+					      <span class="row key-term3 pl-3">Please describe the relationship between caption 1 and the image in 2-4 sentences, as if you were explaining it to a friend who does not yet "get the joke." </span>
+					    </div>
+					    <div class="col col-12 row justify-content-center mt-3">
+					      <i>The caption is something the sad train might say to the man at the bar. "Trainwreck" is a figure of speech used to describe something disasterous, but it can also mean a literal crashing of trains. The statement is funny because a trainwreck can be both literal and figurative to the sad train.</i>
+					    </div>
+
+					    <div class="col col-12 row justify-content-center mt-5">
+					      <span class="row key-term pl-3">Caption 2: Thomas was on the wrong track his whole life.</span>
+					    </div>
+
+					    <div class="col col-7 row justify-content-center mt-3">
+					      Is it clear how caption 2 relates to the image?
+					    </div>
+
+					    <div class="btn-group btn-group-toggle col col-7 justify-content-center mt-3" data-toggle="buttons">
+					      <label class="btn btn-primary btn-sm active" for="btn_choice1">
+						<input type="radio" name="likelihood_ex" id="relation_ex2_clear" value="1" autocomplete="off" checked>  <u><i><strong> Yes, it's very clear. </strong></i></u>
+					      </label>
+					      <label class="btn btn-primary btn-sm" for="btn_choice1">
+						<input type="radio" name="likelihood_ex" id="relation_ex2_mid" value="2" autocomplete="off"> Somewhat. I can guess.
+					      </label>
+					      <label class="btn btn-primary btn-sm" for="btn_choice1">
+						<input type="radio" name="likelihood_ex" id="relation_ex2_unclear" value="3" autocomplete="off"> I don't see how it's related.
+					      </label>
+					    </div>
+
+
+					    <div class="form-check mt-3">
+					      <input class="form-check-input" type="checkbox" value="" id="example_pun_check2" onclick="return false;" checked>
+					      <label class="form-check-label active" for="example_pun_check2">
+						This caption contains a word/phrase with a double meaning, i.e., a pun.
+					      </label>
+					    </div>
+
+					    <div class="col col-8 row justify-content-center mt-3">
+					      Use your mouse to highlight which word/phrase is the pun or the most important part of the caption.
+					    </div>
+					    
+					    <div class="col col-7 row justify-content-center mt-3">
+					      <div contenteditable=false>
+						Thomas was on the <span style="background-color:chartreuse">wrong track</span> his whole life.
+					      </div>
+					      <button type="button">Reset highlighting</button>
+					    </div>
+
+					    <div class="form-check mt-3">
+					      <input class="form-check-input" type="checkbox" value="" id="example_quote_check2" onclick="return false;">
+					      <label class="form-check-label active" for="example_quote_check2">
+						This caption is a quotation that is said by one of the depicted characters.
+					      </label>
+					    </div>
+
+					    <div class="col col-8 row justify-content-center mt-3">
+					      <span class="row key-term3 pl-3">Please describe the relationship between caption 2 and the image in 2-4 sentences, as if you were explaining it to a friend who does not yet "get the joke." </span>
+					    </div>
+					    <div class="col col-12 row justify-content-center mt-3">
+					      <i>"Thomas" refers to Thomas the Tank Engine, a famous train from popular culture. In this case, it's Thomas that is sad and drinking at the bar because he's been on "the wrong track." This has a double meaning: the "wrong track" can be a figure of speech, refering to an incorrect or misguided direction, but in the case of Thomas the train, the wrong track could also literally mean the wrong train track, which would be problematic for a train because it would be headed to an incorrect destination.</i>
+					    </div>
+
+
+					    <div class="col col-12 row justify-content-center mt-5">
+					      <span class="row key-term pl-3">Caption 3: They say trains of the 21st century need to be ethanol powered.</span>
+					    </div>
+
+					    <div class="col col-7 row justify-content-center mt-3">
+					      Is it clear how caption 3 relates to the image?
+					    </div>
+
+					    <div class="btn-group btn-group-toggle col col-7 justify-content-center mt-3" data-toggle="buttons">
+					      <label class="btn btn-primary btn-sm" for="btn_choice1">
+						<input type="radio" name="likelihood_ex" id="relation_ex3_clear" value="1" autocomplete="off"> Yes, it's very clear.
+					      </label>
+					      <label class="btn btn-primary btn-sm active" for="btn_choice1">
+						<input type="radio" name="likelihood_ex" id="relation_ex3_mid" value="2" autocomplete="off" checked> <u><i><strong> Somewhat. I can guess. </strong></i></u>
+					      </label>
+					      <label class="btn btn-primary btn-sm" for="btn_choice1">
+						<input type="radio" name="likelihood_ex" id="relation_ex3_unclear" value="3" autocomplete="off"> I don't see how it's related.
+					      </label>
+					    </div>
+
+					    <div class="form-check mt-3">
+					      <input class="form-check-input" type="checkbox" value="" id="example_pun_check1" onclick="return false;">
+					      <label class="form-check-label active" for="example_pun_check2">
+						This caption contains a word/phrase with a double meaning, i.e., a pun.
+					      </label>
+					    </div>
+
+					    <div class="col col-8 row justify-content-center mt-3">
+					      Use your mouse to highlight which word/phrase is the pun or the most important part of the caption.
+					    </div>
+					    
+					    <div class="col col-7 row justify-content-center mt-3">
+					      <div contenteditable=false>
+						They say trains of the 21st century need to be <span style="background-color:chartreuse">ethanol powered</span>.
+					      </div>
+					      <button type="button">Reset highlighting</button>
+					    </div>
+
+					    <div class="form-check mt-3">
+					      <input class="form-check-input" type="checkbox" value="" id="example_quote_check1" onclick="return false;" checked>
+					      <label class="form-check-label active" for="example_quote_check2">
+						This caption is a quotation that is said by one of the depicted characters.
+					      </label>
+					    </div>
+
+					    
+					    <div class="col col-8 row justify-content-center mt-3">
+					    The caption is probably said by <input type="text" value="the train" size="15" readonly> directed towards <input type="text" value="the man at the bar" size="15" readonly>.
+					    </div>
+
+					    <div class="col col-8 row justify-content-center mt-3">
+					      <span class="row key-term3 pl-3">Please describe the relationship between caption 3 and the image in 2-4 sentences, as if you were explaining it to a friend who does not yet "get the joke."</span>
+					    </div>
+
+					    <div class="col col-12 row justify-content-center mt-3">
+					      <i> While this train looks like it probably runs on coal power, new engines for cars/trains, etc. might run on ethanol, which is a synonym for alcohol. The caption is funny because the coal-powered train feels "washed up" and old, and the reason is that newer, more modern trains run on alcohol (and he doesn't). The added irony is that the train is at a bar and drinking alcohol. </i>
+					    </div>
+					  </div>
+
+					</div>
+
+                                    </div>
+				</div>
+                                <!-- EXAMPLES END -->
+                            </div>
+                        </div>
+
+                        <!-- MTURK INPUT START -->
+                        <div class="col-12 mt-5">
+                            <form name='mturk_form' method='post' id='mturk_form' action='https://www.mturk.com/mturk/externalSubmit'>
+                                <input type='hidden' value='' name='assignmentId' id='assignmentId'/>
+
+				
+                                <!-- EXAMPLE QUESTION -->
+                                <div class= "row justify-content-center">
+                                    <div class="col-7">
+                                    <h3>Part 1: Describe the image</h3>
+                                    </div>
+
+				    <div class="col col-12 row justify-content-center">
+				      <img src="https://jmh-public.s3-us-west-1.amazonaws.com/capcon/newyorker_nextml/new_yorker_nextml_images/562.jpeg" class="source_image"/>
+				    </div>
+
+
+				    <div class="col col-8 row justify-content-center mt-3">
+				      <span class="row key-term1 pl-3">Please describe the contents of the image in 2-3 sentences:</span>
+				    </div>
+				    <div class="col col-7">
+				      <span class="row ml-3"><textarea rows=2 id="descr_1" name ="descr_1" style="width:100%"  required></textarea></span>
+				    </div>
+
+				    <div class="col col-7 row justify-content-center mt-3">
+				      <span class="row key-term2 pl-3">Please highlight any unusual/out-of-place elements in 1-2 sentences:</span>
+				    </div>
+
+
+				    <div class="col col-7">
+				      <span class="row ml-3"><textarea rows=2 id="descr_2" name ="descr_2" style="width:100%"  required></textarea></span>
+				    </div>
+
+				    <div class="col col-8 row justify-content-center mt-3">
+				      Please highlight the most
+				      relevant uncanny region(s) of
+				      interest by drawing at least one
+				      bounding box on the image
+				      below. If you want to delete a
+				      box, you can do so by hovering
+				      over the box you've drawn, and
+				      clicking the X in the top right
+				      corner.
+				    </div>
+
+				    <div class="col col-12 row justify-content-center">
+				      <div id="bbox_annotator" style="display:inline-block" class="mt-2"></div>
+				      <textarea id="bounded_box" name="bounded_box" rows="30" cols="50" style="font-family:monospace;" readonly hidden> </textarea>
+				    </div>
+
+
+                                </div>
+
+				<div class="row col justify-content-center mt-5">
+                                  <div class="col-7">
+				    <h3>Part 2: How do the captions relate?</h3>
+                                  </div>
+
+				  <div class="w-100"></div>
+
+				  
+				  
+				  
+				  <div class="row col justify-content-center mt-3">
+				    <h4>Caption 1:</h4>
+                                  </div>
+
+				  <div class="w-100"></div>
+				  
+				  <div class="row col justify-content-center mt-3">
+				    <strong><i>It could work. We both like worms.</i></strong>
+                                  </div>
+
+				  <div class="w-100"></div>
+
+				  <div class="col row justify-content-center mt-3">
+				    
+				    Is it clear how caption 1 relates to the image?
+				    <div class="w-100"></div>
+				    <div class="btn-group btn-group-toggle col justify-content-center mt-3" data-toggle="buttons">
+				      <label class="btn btn-primary btn-sm" for="btn_choice1">
+				  	<input type="radio" name="likelihood_1" id="relation_1_clear" value="1" autocomplete="off" required> Yes, it's very clear.
+				      </label>
+				      <label class="btn btn-primary btn-sm" for="btn_choice1">
+				  	<input type="radio" name="likelihood_1" id="relation_1_mid" value="2" autocomplete="off" required>Somewhat. I can guess.
+				      </label>
+				      <label class="btn btn-primary btn-sm" for="btn_choice1">
+				  	<input type="radio" name="likelihood_1" id="relation_1_unclear" value="3" autocomplete="off" required> I don't see how it's related.
+				      </label>
+                                    </div>
+				  </div>
+				  
+
+				  <div class="w-100"></div>
+
+				  <div class="form-check mt-3">
+				    <input class="form-check-input" type="checkbox" value="" id="example_pun_check_1" name="example_pun_check_1">
+				    <label class="form-check-label active" for="example_pun_check_1">
+				      This caption contains a word/phrase with a double meaning, i.e., a pun.
+				    </label>
+				  </div>
+
+				  
+				  <div class="col col-8 row justify-content-center mt-3">
+				    Use your mouse to highlight which word/phrase is the pun or the most important part of the caption.
+				  </div>
+					    
+				  <div class="col col-7 row justify-content-center mt-3">
+				    <div contenteditable=false id="highlight-field_1" name="highlight-field_1">
+				      It could work. We both like worms.
+				    </div>
+				  </div>
+				  <div class="col col-7 row justify-content-center mt-3">
+				    <button type="button" id="reset-highlight_1">Reset highlighting</button>
+				  </div>
+
+				  <textarea id="highlight-idxs_1" name="highlight-idxs_1" readonly required hidden>
+				  </textarea>
+
+
+				  <div class="w-100"></div>
+				  
+				  <div class="form-check mt-3">
+				    <input class="form-check-input" type="checkbox" value="" id="example_quote_check_1" name="example_quote_check_1">
+				    <label class="form-check-label active" for="example_quote_check_1">
+				      This caption is a quotation that is said by one of the depicted characters.
+				    </label>
+				  </div>
+				  
+				  <div id="dialog-followup_1">
+				    The caption is said by <input type="text" name="speaker_1" id="speaker_1" size="20"> directed towards <input type="text" name="target_1" id="target_1" size="20">.
+				  </div>
+
+
+				  <div class="w-100"></div>
+				  
+				  <div class="col col-8 row justify-content-center mt-3">
+				    <span class="row key-term3 pl-3">Please describe the relationship between caption 1 and the image in 2-4 sentences, as if you were explaining it to a friend who does not yet "get the joke."</span>
+				  </div>
+				  
+				  <div class="w-100"></div>
+
+				  <div class="col col-7">
+				    <span class="row ml-3"><textarea rows=2 id="explain_1" name ="explain_1" style="width:100%"  required></textarea></span>
+				  </div>
+				  <div class="w-100"></div>
+				  
+				  
+				  
+				  
+				  <div class="row col justify-content-center mt-3">
+				    <h4>Caption 2:</h4>
+                                  </div>
+
+				  <div class="w-100"></div>
+				  
+				  <div class="row col justify-content-center mt-3">
+				    <strong><i>One of us should look more concerned.</i></strong>
+                                  </div>
+
+				  <div class="w-100"></div>
+
+				  <div class="col row justify-content-center mt-3">
+				    
+				    Is it clear how caption 2 relates to the image?
+				    <div class="w-100"></div>
+				    <div class="btn-group btn-group-toggle col justify-content-center mt-3" data-toggle="buttons">
+				      <label class="btn btn-primary btn-sm" for="btn_choice1">
+				  	<input type="radio" name="likelihood_2" id="relation_2_clear" value="1" autocomplete="off" required> Yes, it's very clear.
+				      </label>
+				      <label class="btn btn-primary btn-sm" for="btn_choice1">
+				  	<input type="radio" name="likelihood_2" id="relation_2_mid" value="2" autocomplete="off" required>Somewhat. I can guess.
+				      </label>
+				      <label class="btn btn-primary btn-sm" for="btn_choice1">
+				  	<input type="radio" name="likelihood_2" id="relation_2_unclear" value="3" autocomplete="off" required> I don't see how it's related.
+				      </label>
+                                    </div>
+				  </div>
+				  
+
+				  <div class="w-100"></div>
+
+				  <div class="form-check mt-3">
+				    <input class="form-check-input" type="checkbox" value="" id="example_pun_check_2" name="example_pun_check_2">
+				    <label class="form-check-label active" for="example_pun_check_2">
+				      This caption contains a word/phrase with a double meaning, i.e., a pun.
+				    </label>
+				  </div>
+
+				  
+				  <div class="col col-8 row justify-content-center mt-3">
+				    Use your mouse to highlight which word/phrase is the pun or the most important part of the caption.
+				  </div>
+					    
+				  <div class="col col-7 row justify-content-center mt-3">
+				    <div contenteditable=false id="highlight-field_2" name="highlight-field_2">
+				      One of us should look more concerned.
+				    </div>
+				  </div>
+				  <div class="col col-7 row justify-content-center mt-3">
+				    <button type="button" id="reset-highlight_2">Reset highlighting</button>
+				  </div>
+
+				  <textarea id="highlight-idxs_2" name="highlight-idxs_2" readonly required hidden>
+				  </textarea>
+
+
+				  <div class="w-100"></div>
+				  
+				  <div class="form-check mt-3">
+				    <input class="form-check-input" type="checkbox" value="" id="example_quote_check_2" name="example_quote_check_2">
+				    <label class="form-check-label active" for="example_quote_check_2">
+				      This caption is a quotation that is said by one of the depicted characters.
+				    </label>
+				  </div>
+				  
+				  <div id="dialog-followup_2">
+				    The caption is said by <input type="text" name="speaker_2" id="speaker_2" size="20"> directed towards <input type="text" name="target_2" id="target_2" size="20">.
+				  </div>
+
+
+				  <div class="w-100"></div>
+				  
+				  <div class="col col-8 row justify-content-center mt-3">
+				    <span class="row key-term3 pl-3">Please describe the relationship between caption 2 and the image in 2-4 sentences, as if you were explaining it to a friend who does not yet "get the joke."</span>
+				  </div>
+				  
+				  <div class="w-100"></div>
+
+				  <div class="col col-7">
+				    <span class="row ml-3"><textarea rows=2 id="explain_2" name ="explain_2" style="width:100%"  required></textarea></span>
+				  </div>
+				  <div class="w-100"></div>
+				  
+				  
+				  
+				  
+				  <div class="row col justify-content-center mt-3">
+				    <h4>Caption 3:</h4>
+                                  </div>
+
+				  <div class="w-100"></div>
+				  
+				  <div class="row col justify-content-center mt-3">
+				    <strong><i>Where are the statues? I can't hold it anymore.</i></strong>
+                                  </div>
+
+				  <div class="w-100"></div>
+
+				  <div class="col row justify-content-center mt-3">
+				    
+				    Is it clear how caption 3 relates to the image?
+				    <div class="w-100"></div>
+				    <div class="btn-group btn-group-toggle col justify-content-center mt-3" data-toggle="buttons">
+				      <label class="btn btn-primary btn-sm" for="btn_choice1">
+				  	<input type="radio" name="likelihood_3" id="relation_3_clear" value="1" autocomplete="off" required> Yes, it's very clear.
+				      </label>
+				      <label class="btn btn-primary btn-sm" for="btn_choice1">
+				  	<input type="radio" name="likelihood_3" id="relation_3_mid" value="2" autocomplete="off" required>Somewhat. I can guess.
+				      </label>
+				      <label class="btn btn-primary btn-sm" for="btn_choice1">
+				  	<input type="radio" name="likelihood_3" id="relation_3_unclear" value="3" autocomplete="off" required> I don't see how it's related.
+				      </label>
+                                    </div>
+				  </div>
+				  
+
+				  <div class="w-100"></div>
+
+				  <div class="form-check mt-3">
+				    <input class="form-check-input" type="checkbox" value="" id="example_pun_check_3" name="example_pun_check_3">
+				    <label class="form-check-label active" for="example_pun_check_3">
+				      This caption contains a word/phrase with a double meaning, i.e., a pun.
+				    </label>
+				  </div>
+
+				  
+				  <div class="col col-8 row justify-content-center mt-3">
+				    Use your mouse to highlight which word/phrase is the pun or the most important part of the caption.
+				  </div>
+					    
+				  <div class="col col-7 row justify-content-center mt-3">
+				    <div contenteditable=false id="highlight-field_3" name="highlight-field_3">
+				      Where are the statues? I can't hold it in anymore.
+				    </div>
+				  </div>
+				  <div class="col col-7 row justify-content-center mt-3">
+				    <button type="button" id="reset-highlight_3">Reset highlighting</button>
+				  </div>
+
+				  <textarea id="highlight-idxs_3" name="highlight-idxs_3" readonly required hidden>
+				  </textarea>
+
+
+				  <div class="w-100"></div>
+				  
+				  <div class="form-check mt-3">
+				    <input class="form-check-input" type="checkbox" value="" id="example_quote_check_3" name="example_quote_check_3">
+				    <label class="form-check-label active" for="example_quote_check_3">
+				      This caption is a quotation that is said by one of the depicted characters.
+				    </label>
+				  </div>
+				  
+				  <div id="dialog-followup_3">
+				    The caption is said by <input type="text" name="speaker_3" id="speaker_3" size="20"> directed towards <input type="text" name="target_3" id="target_3" size="20">.
+				  </div>
+
+
+				  <div class="w-100"></div>
+				  
+				  <div class="col col-8 row justify-content-center mt-3">
+				    <span class="row key-term3 pl-3">Please describe the relationship between caption 3 and the image in 2-4 sentences, as if you were explaining it to a friend who does not yet "get the joke."</span>
+				  </div>
+				  
+				  <div class="w-100"></div>
+
+				  <div class="col col-7">
+				    <span class="row ml-3"><textarea rows=2 id="explain_3" name ="explain_3" style="width:100%"  required></textarea></span>
+				  </div>
+				  <div class="w-100"></div>
+				  
+				  
+				  
+				  <!-- OPTIONAL FEEDBACK -->
+				  <div class="row mt-5">
+				    <div class="col-8 offset-2 col-lg-6 offset-lg-3">
+                                      <p>(Optional) Please let us know if anything was unclear, if you experienced any issues, or if you have any other fedback for us.</p>
+                                      <textarea id="feedback" name="feedback" rows=3></textarea>
+				    </div>
+				  </div>
+				  <div class="w-100"></div>
+				  
+				  <!-- SUBMIT BUTTON -->
+				  <div class="row mt-5">
+				    <div class="col-2">
+                                      <input id="submitButton" onclick="getnext()" type="submit" value="Submit">
+				    </div>
+				  </div>
+				</div>  
+                            </form>
+                            <script language='Javascript'>turkSetAssignmentID();</script>
+			</div>
+		   </div>
+                   <!-- MTURK INPUT END -->
+		   
+		   <!-- HIT END -->
+		   
+                   <!-- BOOSTRAP JS -->
+		   
+                   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+                   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+                   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		   
+		   
+                   <!-- MAIN JS -->
+<script id="hitpub_js">
+    $(document).ready(function() {
+        control_bbox();
+        highlight_control("highlight-field_1", "highlight-idxs_1", "reset-highlight_1");
+        highlight_control("highlight-field_2", "highlight-idxs_2", "reset-highlight_2");
+        highlight_control("highlight-field_3", "highlight-idxs_3", "reset-highlight_3");
+        speaker_control("example_quote_check_1", "dialog-followup_1", "speaker_1", "target_1");
+        speaker_control("example_quote_check_2", "dialog-followup_2", "speaker_2", "target_2");
+        speaker_control("example_quote_check_3", "dialog-followup_3", "speaker_3", "target_3");
+        
+    });
+    
+    function control_bbox() {
+      var annotator = new BBoxAnnotator({
+          id: '#bbox_annotator',
+          url: $('img.source_image').attr('src'),
+          input_method: 'fixed',
+          labels_id: 'obs_select',
+          labels_desc_id: 'obs_desc',
+          border_width: 3,
+        onchange: function(entries) {
+          // Input the text area on change. Use "hidden" input tag unless debugging.
+          // <input id="annotation_data" name="annotation_data" type="hidden" />
+          // $("#annotation_data").val(JSON.stringify(entries))
+          $("#bounded_box").text(JSON.stringify(entries, null, "  "));
+        }
+      });
+    }
+    
+    function speaker_control(checkbox_name, followup_field_name, speaker_field_name, target_field_name) {
+        $("#" + followup_field_name).hide();
+        $('#' + checkbox_name).change( function() {
+    	if (this.checked) {
+    	    $("#" + followup_field_name).show();                                                                                                                                                       
+    	    $("#" + speaker_field_name).prop('required',true);
+    	    $("#" + target_field_name).prop('required',true);
+    	} else {
+    	    $("#" + followup_field_name).hide();
+    	    $("#" + speaker_field_name).prop('required',false);
+    	    $("#" + target_field_name).prop('required',false);
+    	}
+        });
+    }
+    
+    
+    function highlight_control(highlight_field_name, highlight_idx_field_name, highlight_reset_button_name) {
+        var highlightDone=false;
+        var mouseIsDown=false;
+        var originalText = $("#"+highlight_field_name).text();
+    
+        //$("#"+highlight_field_name).bind('mouseup',function(e) {
+    
+        $("#"+highlight_field_name).mousedown(function(){
+      	mouseIsDown = true;
+    	console.log("MOUSE DOWN");
+        });
+    
+        
+        $(document).mouseup(function(){
+    	console.log("MOUSE UP")
+    	if(mouseIsDown) {
+    	    
+    	    if (highlightDone) {
+        		return;
+    	    }
+    	    else {
+    		var text = $("#"+highlight_field_name).text();
+    		var highlight = window.getSelection();
+    		var spn = '<span style="background-color:chartreuse">' + highlight + '</span>';
+    		try {
+    		    var range = highlight.getRangeAt(0);
+    		    if(range.startOffset < range.endOffset) {
+    			$("#"+highlight_idx_field_name).text(range.startOffset + "\t" + range.endOffset + "\t" + highlight);
+    			var startText = text.substring(0, range.startOffset);
+    			var endText = text.substring(range.endOffset, text.length);
+    			$("#"+highlight_field_name).html(startText + spn + endText);
+    			highlightDone = true;
+    		    }
+    		}
+    		catch(err){console.log("Highlighting error")}
+    		highlight.removeAllRanges();
+    	    }
+    	}
+    	mouseIsDown = false;
+        });
+    
+        $("#"+highlight_reset_button_name).click(function(){
+    	$("#"+highlight_field_name).text(originalText);
+    	$("#"+highlight_idx_field_name).text("");
+    	highlightDone=false;
+        });
+    }
+
+</script>		   
+		   
+<!-- BBOX -->
+<script id="bbox_js" type='text/javascript'>
+
+// Generated by CoffeeScript 1.10.0
+(function() {
+  var BBoxSelector;
+
+  BBoxSelector = (function() {
+    function BBoxSelector(image_frame, options) {
+      if (options == null) {
+        options = {};
+      }
+      options.input_method || (options.input_method = "text");
+      this.image_frame = image_frame;
+      this.border_width = options.border_width || 2;
+      this.selector = $('<div class="bbox_selector"></div>');
+      this.selector.css({
+        "border": this.border_width + "px dotted rgb(127,255,127)",
+        "position": "absolute"
+      });
+      this.image_frame.append(this.selector);
+      this.selector.css({
+        "border-width": this.border_width
+      });
+      this.selector.hide();
+      this.create_label_box(options);
+    }
+
+    BBoxSelector.prototype.create_label_box = function(options) {
+      var i, label, len, ref;
+      options.labels || (options.labels = ["object"]);
+      this.label_box = $('<div class="label_box"></div>');
+      this.label_box.css({
+        "position": "absolute"
+      });
+      this.image_frame.append(this.label_box);
+      switch (options.input_method) {
+        case 'select':
+          if (typeof options.labels === "string") {
+            options.labels = [options.labels];
+          }
+          this.label_input = $('<select class="label_input" name="label"></select>');
+          this.label_box.append(this.label_input);
+          this.label_input.append($('<option value>choose an item</option>'));
+          ref = options.labels;
+          for (i = 0, len = ref.length; i < len; i++) {
+            label = ref[i];
+            this.label_input.append('<option value="' + label + '">' + label + '</option>');
+          }
+          this.label_input.change(function(e) {
+            return this.blur();
+          });
+          break;
+        case 'text':
+          if (typeof options.labels === "string") {
+            options.labels = [options.labels];
+          }
+          this.label_input = $('<input class="label_input" name="label" ' + 'type="text" value>');
+          this.label_box.append(this.label_input);
+          this.label_input.autocomplete({
+            source: options.labels || [''],
+            autoFocus: true
+          });
+          break;
+        case 'fixed':
+          if ($.isArray(options.labels)) {
+            options.labels = options.labels[0];
+          }
+          this.label_input = $('<input class="label_input" name="label" type="text">');
+          this.label_box.append(this.label_input);
+          this.label_input.val(options.labels);
+          break;
+        default:
+          throw 'Invalid label_input parameter: ' + options.input_method;
+      }
+      return this.label_box.hide();
+    };
+
+    BBoxSelector.prototype.crop = function(pageX, pageY) {
+      var point;
+      return point = {
+        x: Math.min(Math.max(Math.round(pageX - this.image_frame.offset().left), 0), Math.round(this.image_frame.width() - 1)),
+        y: Math.min(Math.max(Math.round(pageY - this.image_frame.offset().top), 0), Math.round(this.image_frame.height() - 1))
+      };
+    };
+
+    BBoxSelector.prototype.start = function(pageX, pageY) {
+      this.pointer = this.crop(pageX, pageY);
+      this.offset = this.pointer;
+      this.refresh();
+      this.selector.show();
+      $('body').css('cursor', 'crosshair');
+      return document.onselectstart = function() {
+        return false;
+      };
+    };
+
+    BBoxSelector.prototype.update_rectangle = function(pageX, pageY) {
+      this.pointer = this.crop(pageX, pageY);
+      return this.refresh();
+    };
+
+    BBoxSelector.prototype.input_label = function(options) {
+      $('body').css('cursor', 'default');
+      document.onselectstart = function() {
+        return true;
+      };
+      this.label_box.show();
+      return this.label_input.focus();
+    };
+
+    BBoxSelector.prototype.finish = function(options) {
+      var data;
+      this.label_box.hide();
+      this.selector.hide();
+      data = this.rectangle();
+      data.label = $.trim(this.label_input.val().toLowerCase());
+      if (options.input_method !== 'fixed') {
+        this.label_input.val('');
+      }
+      return data;
+    };
+
+    BBoxSelector.prototype.rectangle = function() {
+      var rect, x1, x2, y1, y2;
+      x1 = Math.min(this.offset.x, this.pointer.x);
+      y1 = Math.min(this.offset.y, this.pointer.y);
+      x2 = Math.max(this.offset.x, this.pointer.x);
+      y2 = Math.max(this.offset.y, this.pointer.y);
+      return rect = {
+        left: x1,
+        top: y1,
+        width: x2 - x1 + 1,
+        height: y2 - y1 + 1
+      };
+    };
+
+    BBoxSelector.prototype.refresh = function() {
+      var rect;
+      rect = this.rectangle();
+      this.selector.css({
+        left: (rect.left - this.border_width) + 'px',
+        top: (rect.top - this.border_width) + 'px',
+        width: rect.width + 'px',
+        height: rect.height + 'px'
+      });
+      return this.label_box.css({
+        left: (rect.left - this.border_width) + 'px',
+        top: (rect.top + rect.height + this.border_width) + 'px'
+      });
+    };
+
+    BBoxSelector.prototype.get_input_element = function() {
+      return this.label_input;
+    };
+
+    return BBoxSelector;
+
+  })();
+
+  this.BBoxAnnotator = (function() {
+    function BBoxAnnotator(options) {
+      var annotator, image_element;
+      annotator = this;
+      this.annotator_element = $(options.id || "#bbox_annotator");
+      this.border_width = options.border_width || 2;
+      this.show_label = options.show_label || (options.input_method !== "fixed");
+      this.image_frame = $('<div class="image_frame"></div>');
+      this.annotator_element.append(this.image_frame);
+      image_element = new Image();
+      image_element.src = options.url;
+      image_element.onload = function() {
+        options.width || (options.width = image_element.width);
+        options.height || (options.height = image_element.height);
+        annotator.annotator_element.css({
+          "width": (options.width + annotator.border_width * 2) + 'px',
+          "height": (options.height + annotator.border_width * 2) + 'px',
+          "cursor": "crosshair"
+        });
+        annotator.image_frame.css({
+          "background-image": "url('" + image_element.src + "')",
+          "width": options.width + "px",
+          "height": options.height + "px",
+          "position": "relative"
+        });
+        annotator.selector = new BBoxSelector(annotator.image_frame, options);
+        return annotator.initialize_events(annotator.selector, options);
+      };
+      image_element.onerror = function() {
+        return annotator.annotator_element.text("Invalid image URL: " + options.url);
+      };
+      this.entries = [];
+      this.onchange = options.onchange;
+    }
+
+    BBoxAnnotator.prototype.initialize_events = function(selector, options) {
+      var annotator, status;
+      status = 'free';
+      this.hit_menuitem = false;
+      annotator = this;
+      this.annotator_element.mousedown(function(e) {
+        if (!annotator.hit_menuitem) {
+          switch (status) {
+            case 'free':
+            case 'input':
+              if (status === 'input') {
+                selector.get_input_element().blur();
+              }
+              if (e.which === 1) {
+                selector.start(e.pageX, e.pageY);
+                status = 'hold';
+              }
+          }
+        }
+        annotator.hit_menuitem = false;
+        return true;
+      });
+      $(window).mousemove(function(e) {
+        switch (status) {
+          case 'hold':
+            selector.update_rectangle(e.pageX, e.pageY);
+        }
+        return true;
+      });
+      $(window).mouseup(function(e) {
+        switch (status) {
+          case 'hold':
+            selector.update_rectangle(e.pageX, e.pageY);
+            selector.input_label(options);
+            status = 'input';
+            if (options.input_method === 'fixed') {
+              selector.get_input_element().blur();
+            }
+        }
+        return true;
+      });
+      selector.get_input_element().blur(function(e) {
+        var data;
+        switch (status) {
+          case 'input':
+            data = selector.finish(options);
+            if (data.label) {
+              annotator.add_entry(data);
+              if (annotator.onchange) {
+                annotator.onchange(annotator.entries);
+              }
+            }
+            status = 'free';
+        }
+        return true;
+      });
+      selector.get_input_element().keypress(function(e) {
+        switch (status) {
+          case 'input':
+            if (e.which === 13) {
+              selector.get_input_element().blur();
+            }
+        }
+        return e.which !== 13;
+      });
+      selector.get_input_element().mousedown(function(e) {
+        return annotator.hit_menuitem = true;
+      });
+      selector.get_input_element().mousemove(function(e) {
+        return annotator.hit_menuitem = true;
+      });
+      selector.get_input_element().mouseup(function(e) {
+        return annotator.hit_menuitem = true;
+      });
+      return selector.get_input_element().parent().mousedown(function(e) {
+        return annotator.hit_menuitem = true;
+      });
+    };
+
+    BBoxAnnotator.prototype.add_entry = function(entry) {
+      var annotator, box_element, close_button, text_box;
+      this.entries.push(entry);
+      box_element = $('<div class="annotated_bounding_box"></div>');
+      box_element.appendTo(this.image_frame).css({
+        "border": this.border_width + "px solid rgb(127,255,127)",
+        "position": "absolute",
+        "top": (entry.top - this.border_width) + "px",
+        "left": (entry.left - this.border_width) + "px",
+        "width": entry.width + "px",
+        "height": entry.height + "px",
+        "color": "rgb(127,255,127)",
+        "font-family": "monospace",
+        "font-size": "small"
+      });
+      close_button = $('<div></div>').appendTo(box_element).css({
+        "position": "absolute",
+        "top": "-8px",
+        "right": "-8px",
+        "width": "16px",
+        "height": "0",
+        "padding": "16px 0 0 0",
+        "overflow": "hidden",
+        "color": "#fff",
+        "background-color": "#030",
+        "border": "2px solid #fff",
+        "-moz-border-radius": "18px",
+        "-webkit-border-radius": "18px",
+        "border-radius": "18px",
+        "cursor": "pointer",
+        "-moz-user-select": "none",
+        "-webkit-user-select": "none",
+        "user-select": "none",
+        "text-align": "center"
+      });
+      $("<div></div>").appendTo(close_button).html('&#215;').css({
+        "display": "block",
+        "text-align": "center",
+        "width": "16px",
+        "position": "absolute",
+        "top": "-2px",
+        "left": "0",
+        "font-size": "16px",
+        "line-height": "16px",
+        "font-family": '"Helvetica Neue", Consolas, Verdana, Tahoma, Calibri, ' + 'Helvetica, Menlo, "Droid Sans", sans-serif'
+      });
+      text_box = $('<div></div>').appendTo(box_element).css({
+        "overflow": "hidden"
+      });
+      if (this.show_label) {
+        text_box.text(entry.label);
+      }
+      annotator = this;
+      box_element.hover((function(e) {
+        return close_button.show();
+      }), (function(e) {
+        return close_button.hide();
+      }));
+      close_button.mousedown(function(e) {
+        return annotator.hit_menuitem = true;
+      });
+      close_button.click(function(e) {
+        var clicked_box, index;
+        clicked_box = close_button.parent(".annotated_bounding_box");
+        index = clicked_box.prevAll(".annotated_bounding_box").length;
+        clicked_box.detach();
+        annotator.entries.splice(index, 1);
+        return annotator.onchange(annotator.entries);
+      });
+      return close_button.hide();
+    };
+
+    BBoxAnnotator.prototype.clear_all = function(e) {
+      this.annotator_element.find(".annotated_bounding_box").detach();
+      this.entries.splice(0);
+      return this.onchange(this.entries);
+    };
+
+    return BBoxAnnotator;
+
+  })();
+
+}).call(this);
+
+
+</script>
+		   
