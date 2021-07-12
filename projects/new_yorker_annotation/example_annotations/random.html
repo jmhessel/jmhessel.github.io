@@ -1,8 +1,17 @@
-redirecting...
-<script>
-  window.onload = function() {
-    var i = Math.round(Math.random()*(543-1));
-    window.location.replace('https://jmhessel.com/projects/new_yorker_annotation/example_annotations/' + i + '.html');
-    return false;
-};
-</script>
+<html> 
+  <head> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script> 
+      $(function(){
+	  var i = Math.round(Math.random()*(543-1));
+	  console.log(i);
+	  console.log('https://jmhessel.com/projects/new_yorker_annotation/example_annotations/' + i + '.html');
+	  $("#mydiv").load('https://jmhessel.com/projects/new_yorker_annotation/example_annotations/' + i + '.html'); 
+    });
+    </script> 
+  </head> 
+
+  <body> 
+     <div id="mydiv"></div>
+  </body> 
+</html>
