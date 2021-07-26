@@ -1,0 +1,293 @@
+            <html lang="en">
+
+                    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+                    <script type='text/javascript' src='https://s3.amazonaws.com/mturk-public/externalHIT_v1.js'></script>
+
+
+                    <!-- BOOTSTRAP CSS -->
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+                    <!-- HITPUB CSS -->
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+                    <style id="hitpub_css">
+                        /***********************************************
+                        MOSAIC BOOSTRAP OVERWRITES
+                        ***********************************************/
+                        #hitinfo .card {
+                            border-radius: 0;
+                        }
+                        #hitinfo .card:first-child {
+                            border-bottom: 0;
+                        }
+                         #hitinfo button.btn-link {
+                            color: #06486F;
+                            text-decoration: none;
+                         }
+                        #hitinfo button.btn-link:hover {
+                            text-decoration: none;
+                        }
+                        #hit ul.question-choice {
+                            list-style-type: none;
+                        }
+                        /***********************************************
+                        MOSAIC GENERAL STYLING
+                        ***********************************************/
+                         body {
+                             font-family: "Open Sans", "Roboto", sans-serif;
+                         }
+                        textarea#feedback {
+                            width: 100%
+                        }
+                        input#submitButton {
+                            margin: auto;
+                            display: block;
+                            background-color: #2172a4;
+                            color: #fff;
+                            font-size: 1.125rem;
+                            padding: .5rem 1rem;
+                            cursor: pointer;
+                            border-radius: 1rem;
+                        }
+                        input#submitButton:hover {
+                            background-color: #06486F;
+                        }
+                        
+                        .key-term {
+                            font-weight:bold;
+                            font-style:italic;
+                        }
+                        
+                        .key-term1{
+                            color: #0072B2;
+                            font-weight:bold;
+                        }
+                        
+                        .key-term2{
+                            color:#D55E00;
+                            font-weight:bold;
+                        }
+                        
+                        .key-term3{
+                            color: #CC79A7;
+                            font-weight:bold;
+                        }
+
+                    </style>
+
+
+		   <!-- HIT START -->
+                   <div id="hit" class="container">
+                        <div class="col-8 offset-2">
+                            <div class="accordion" id="hitinfo">
+
+                                <!-- INSTRUCTIONS START -->
+                                <div class="card">
+                                    <div class="card-header" id="instructionsHeading">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#instructions" aria-expanded="true" aria-controls="instructions">
+                                                Instructions (click to expand/hide)
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div class="collapse show" id="instructions" aria-labelledby="instructionsHeading" data-parent="#hitinfo">
+                                        <div class="card-body">
+					  <p>Thanks for participating in this HIT! If you are an employee of the University of Washington, we ask that you not partake in this task.</p>
+					  <p> <strong> NOTE: The instructions have probably changed since the last time you did this HIT! </strong> While this HIT is similar, please take a moment to familiarize yourself with the modifications </p>
+
+                                          <h3 class="border-top pt-2">Your task is to analyze a given image.</h3>
+                                          <h6> There are three parts </h6>
+
+					  First, <span class="key-term1">describe the image</span> by writing a <i>2-3 sentence summary</i>. Consider focusing on:
+
+					  <ul>
+					    <li> Where is the scene taking place? </li>
+					    <li> Who/what is in the scene? What are they doing? </li>
+					    <li> What objects and actions are being depicted? </li>
+					    <li> Is anyone particularly happy/unhappy/mad/etc.? </li>
+					  </ul>
+
+					  <p>
+					  There's no need to be too formal, but please do your best to write full, grammatical sentences (see the examples below).
+					  </p>
+
+					  <p>
+					  Second, these images may depict
+					  interesting/unusual
+					  situations. <span class="key-term2">Highlight
+					  these uncanny/unusual
+					  elements,</span> by giving a
+					  brief 1-2 sentence
+					  explanation of why they are
+					  uncanny.  Consider
+					  focusing on:
+					  <ul>
+					    <li> Which objects, actions, entities, etc. are out-of-place? </li>
+					    <li> Are the actions any characters are undertaking strange? </li>
+					    <li> Do the characters have any unusual identifying characteristics? </li>
+					  </ul>
+					  </p>
+					  Third, in a single sentence, please write <span class="key-term3"> the question that you most want answered about the scene,</span> based on the image, your description, and your highlight of which parts are unusual/uncanny (see examples below).
+					</div>
+				    </div>
+                                </div>
+                                <!-- INSTRUCTIONS END -->
+
+                                <!-- EXAMPLES START -->
+                                <div class="card">
+                                    <div class="card-header" id="examplesHeading">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#examples" aria-expanded="true" aria-controls="examples">
+                                                Example (click to expand/hide)
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div class="collapse show" id="examples" aria-labelledby="examplesHeading" data-parent="#hitinfo">
+                                      <div class="card-body">
+					
+					<!-- EXAMPLE QUESTION -->
+					<div class= "row justify-content-center">
+					  <div class="col col-12">
+					    <h3>Example 1</h3>
+					  </div>
+					  <div class="col col-12 row justify-content-center">
+					    <img src="https://jmh-public.s3-us-west-1.amazonaws.com/capcon/newyorker_nextml/new_yorker_nextml_images/497.jpeg" width="90%"/>
+					  </div>
+					  
+					  <div class="col col-10 row justify-content-center mt-3">
+					    <span class="row key-term1 pl-3">Please describe the contents of the image in 2-3 sentences:</span>
+					  </div>
+					  <div class="col col-9 row justify-content-center mt-3">
+					    <i>A train is drinking a beer and sitting at a bar next to a man. The train is sad and crying. The seated man is glancing at it. </i>
+					  </div>
+					  
+					  <div class="col col-10 row justify-content-center mt-3">
+					    <span class="row key-term2 pl-3">Please highlight any unusual/out-of-place elements in 1-2 sentences:</span>
+					  </div>
+					  
+					  <div class="col col-9 row justify-content-center mt-3">
+					    <i>Not only is it unusual that the train is anthropomorphic (i.e., it has a face and is seated at a bar drinking beer), but it's particularly odd that the train is so sad, and is crying/apparently drinking its troubles away at the bar.</i>
+					  </div>
+
+
+					  <div class="col col-10 row justify-content-center mt-3">
+					    <span class="row key-term3 pl-3">In 1 sentence, which question would you most like answered about the scene?</span>
+					  </div>
+
+					  <div class="col col-9 row justify-content-center mt-3">
+					    <i>Why is the train so upset?</i>
+					  </div>
+
+					</div>
+					<hr>
+					<div class= "row justify-content-center">
+					  <div class="col col-12">
+					    <h3>Example 2</h3>
+					  </div>
+					  <div class="col col-12 row justify-content-center">
+					    <img src="https://jmh-public.s3-us-west-1.amazonaws.com/capcon/newyorker_nextml/new_yorker_nextml_images/510.jpeg" width="90%"/>
+					  </div>
+					  
+					  <div class="col col-10 row justify-content-center mt-3">
+					    <span class="row key-term1 pl-3">Please describe the contents of the image in 2-3 sentences:</span>
+					  </div>
+					  <div class="col col-9 row justify-content-center mt-3">
+					    <i>A man in a suit is lying down on a sidewalk in a busy city, as other pedestrians walk over him. The pedestrians seem to be frustrated and confused that the lying down man is blocking their way, while the man himself seems to be carefree. </i>
+					  </div>
+					  
+					  <div class="col col-10 row justify-content-center mt-3">
+					    <span class="row key-term2 pl-3">Please highlight any unusual/out-of-place elements in 1-2 sentences:</span>
+					  </div>
+					  
+					  <div class="col col-9 row justify-content-center mt-3">
+					    <i>It's unusual that the man is lying in the middle of a sidewalk not only because this action is disruptive to other pedestrians (in real life, people would probably yell at him), but also because he's in a nice suit that is likely to become dirty. Furthermore, his carefree expression seems to indicate that, despite these downsides, he's in no rush to move, and doesn't care about disrupting others. </i>
+					  </div>
+					
+
+					<div class="col col-10 row justify-content-center mt-3">
+					  <span class="row key-term3 pl-3">In 1 sentence, which question would you most like answered about the scene?</span>
+					</div>
+
+
+					<div class="col col-9 row justify-content-center mt-3">
+					  <i>Why is the man lying on the sidewalk?</i>
+					</div>
+				      </div>
+				    </div>
+				</div>
+                                <!-- EXAMPLES END -->
+                            </div>
+                        </div>
+
+                        <!-- MTURK INPUT START -->
+                        <div class="col-12 mt-5">
+                            <form name='mturk_form' method='post' id='mturk_form' action='https://www.mturk.com/mturk/externalSubmit'>
+                                <input type='hidden' value='' name='assignmentId' id='assignmentId'/>
+
+				
+                                <!-- EXAMPLE QUESTION -->
+                                <div class= "row justify-content-center">
+
+				    <div class="col col-12 row justify-content-center">
+				      <img src="https://jmh-public.s3-us-west-1.amazonaws.com/capcon/newyorker_nextml/new_yorker_nextml_images/530.jpeg" class="source_image"/>
+				    </div>
+
+				    <div class="col col-10 row justify-content-center mt-3">
+				      <span class="row key-term1 pl-3">Please describe the contents of the image in 2-3 sentences:</span>
+				    </div>
+				    <div class="col col-9">
+				      <span class="row ml-3"><textarea rows=3 id="descr_1" name ="descr_1" style="width:100%"  required></textarea></span>
+				    </div>
+
+				    <div class="col col-10 row justify-content-center mt-3">
+				      <span class="row key-term2 pl-3">Please highlight any unusual/out-of-place elements in 1-2 sentences:</span>
+				    </div>
+
+				    <div class="col col-9">
+				      <span class="row ml-3"><textarea rows=3 id="descr_2" name ="descr_2" style="width:100%"  required></textarea></span>
+				    </div>
+
+				    <div class="col col-10 row justify-content-center mt-3">
+				      <span class="row key-term3 pl-3">In 1 sentence, which question would you most like answered about the scene?</span>
+				    </div>
+
+				    <div class="col col-9">
+				      <span class="row ml-3"><textarea rows=2 id="descr_3" name ="descr_3" style="width:100%"  required></textarea></span>
+				    </div>
+				  
+				  <!-- OPTIONAL FEEDBACK -->
+				  <div class="row mt-5">
+				    <div class="col-8 offset-2 col-lg-6 offset-lg-3">
+                                      <p>(Optional) Please let us know if anything was unclear, if you experienced any issues, or if you have any other feedback for us.</p>
+                                      <textarea id="feedback" name="feedback" rows=3></textarea>
+				    </div>
+				  </div>
+				  <div class="w-100"></div>
+				  
+				  <!-- SUBMIT BUTTON -->
+				  <div class="row mt-5">
+				    <div class="col-2">
+                                      <input id="submitButton" onclick="getnext()" type="submit" value="Submit">
+				    </div>
+				  </div>
+				</div>  
+                            </form>
+                            <script language='Javascript'>turkSetAssignmentID();</script>
+			</div>
+		   </div>
+                   <!-- MTURK INPUT END -->
+		   
+		   <!-- HIT END -->
+		   
+                   <!-- BOOSTRAP JS -->
+		   
+                   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+                   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+                   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		   
+		   
+                   <!-- MAIN JS -->
+<script id="hitpub_js">
+
+</script>		   
+		   		   
