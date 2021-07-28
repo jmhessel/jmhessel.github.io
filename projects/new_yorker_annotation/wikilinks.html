@@ -93,7 +93,7 @@
                                     <div class="collapse show" id="instructions" aria-labelledby="instructionsHeading" data-parent="#hitinfo">
                                         <div class="card-body">
 					  <p>Thanks for participating in this HIT! If you are an employee of the University of Washington, we ask that you not partake in this task.</p>
-					  <p> <strong> NOTE: The instructions have probably changed since the last time you did this HIT! </strong> While this HIT is similar, please take a moment to familiarize yourself with the modifications </p>
+					  <p> <strong> NOTE: Please read the instructions, even if you've done a similar HIT before. The instructions have probably changed! </strong> Please take a moment to familiarize yourself with the modifications. </p>
 
                                           <h3 class="border-top pt-2">Your task is to provide context for a given image.</h3>
                                           <h6> There are two parts to this task.</h6>
@@ -112,21 +112,44 @@
 					  <p></p>
 					  
 					  <ul>
-					    <li> if Paris were reference: <strong><i>https://en.wikipedia.org/wiki/Paris</i> </strong></li>
+					    <li> if Paris were referenced: <strong><i>https://en.wikipedia.org/wiki/Paris</i> </strong></li>
 					    <li> if President Obama was referenced, <strong><i>https://en.wikipedia.org/wiki/Barack_Obama</i></strong></li>
 					    <li> if the characters were eating Fondue, <strong><i>https://en.wikipedia.org/wiki/Fondue</i></strong> </li>
+					    <li> if the scene is in space, <strong><i>https://en.wikipedia.org/wiki/Outer_space</i></strong> </li>
 					    <li> if the characters were at a Lūʻau, <strong><i>https://en.wikipedia.org/wiki/Lūʻau</i></strong></li>
 					    <li> if the characters were fencing, <strong><i>https://en.wikipedia.org/wiki/Fencing</i></strong> </li>
 					    <li> if the characters are from Sleeping Beauty, <strong><i> https://en.wikipedia.org/wiki/Sleeping_Beauty </i> </strong> </li>
 					  </ul>
-					  Some images may contain more
-					  references than others, but
-					  do your best to provide at
-					  least two links. The more
-					  specific the links are, the
-					  better, e.g., "Sleeping
-					  Beauty" is usually better
-					  than "Fairy Tale". A valid English wikipedia link should begin with "https://en.wikipedia.org/wiki/" and have no section links, e.g., instead of <strong>https://en.wikipedia.org/wiki/Sleeping_Beauty#Plot</strong>, <strong>https://en.wikipedia.org/wiki/Sleeping_Beauty</strong> is better.
+
+					  <strong> Rules for links: </strong>
+					  <ul>
+					    <li> <u> <strong> Provide valid links: </strong> </u> A valid English wikipedia link should begin with "https://en.wikipedia.org/wiki/" and have no section links. Don't provide <strong>https://en.wikipedia.org/wiki/Sleeping_Beauty#Plot</strong>, use <strong>https://en.wikipedia.org/wiki/Sleeping_Beauty</strong>. </li>
+					    <li> <u> <strong> Provide specific/relevant links:</strong> </u> If the scene
+					    happens to contain people,
+					    don't just provide a link
+					    to the wikipedia page for
+					    "Person." Also, focus on
+					    relevant information,
+					    e.g., don't include links
+					    for "Shoe" if the
+					    person happens to be
+					    wearing a shoes, unless
+					    the shoe is relevant to the
+					    scene. </li>
+					    
+					    <li> <u> <strong> For
+					      proper nouns, specific
+					      is
+					      better: </strong> </u>
+					      linking "Sleeping
+					      Beauty" is better than
+					      "Fairy Tale"; linking
+					      "New York City" is
+					      better than "City";
+					      linking "Barack Obama"
+					      is better than than
+					      "President" </li>
+
 					</div>
 				    </div>
                                 </div>
@@ -194,7 +217,7 @@
 					  </div>
 					  
 					  <div class="col col-10 row justify-content-center mt-3">
-					    <span class="row key-term3 pl-3">These links would be helpful for a robot to understand the image:</span>
+					    <span class="row key-term3 pl-3">These wikipedia links would be helpful for a robot to understand the image:</span>
 					  </div>
 					  
 					  <div class="col-10 mt-3">
@@ -229,6 +252,10 @@
 				  
 				  <div class="col col-12 row justify-content-center">
 				    <textarea rows=1 id="location" name ="location" style="width:30%"  required></textarea>
+				  </div>
+
+				  <div class="col col-10 row justify-content-center mt-3">
+				    <span class="row key-term3 pl-3">These wikipedia links would be helpful for a robot to understand the image:</span>
 				  </div>
 				  
 				  <div class="col col-12 row justify-content-center mt-3">
