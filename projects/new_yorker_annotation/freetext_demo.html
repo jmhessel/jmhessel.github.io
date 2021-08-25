@@ -256,7 +256,7 @@
 
 
 				    <div class="col col-10 row justify-content-center mt-3">
-				      <span class="row key-term3 pl-3">(optional) In 1 sentence, which question would you most like answered about the scene?</span>
+				      <span class="row key-term3 pl-3">(optional) In 1 sentence, which question would you also like answered about the scene?</span>
 				    </div>
 
 				    <div class="col col-9">
@@ -296,6 +296,22 @@
 		   
                    <!-- MAIN JS -->
 <script id="hitpub_js">
+    $(document).ready(function() {
+        var cookie_name = '_cartoon_descr_cookie_v1';
+        $('.collapse').collapse({ 'toggle': false }).on('hidden.bs.collapse', function() {
+            if (this.id) {
+                localStorage[this.id + cookie_name] = 'true';
+            }
+        }).on('shown.bs.collapse', function() {
+            if (this.id) {
+                localStorage.removeItem(this.id + cookie_name);
+            }
+        }).each(function() {
+            if (this.id && localStorage[this.id + cookie_name] == 'true' ) {
+                $(this).collapse('hide');
+            }
+        });
+    });
 
 </script>		   
 		   		   

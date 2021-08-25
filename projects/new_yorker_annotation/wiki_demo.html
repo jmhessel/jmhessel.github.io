@@ -74,8 +74,6 @@
                         }
 
                     </style>
-
-
 		   <!-- HIT START -->
                    <div id="hit" class="container">
                         <div class="col-8 offset-2">
@@ -98,7 +96,7 @@
                                           <h3 class="border-top pt-2">Your task is to provide context for a given image.</h3>
                                           <h6> There are two parts to this task.</h6>
 
-					  First, in a few words, you'll complete the sentence <span class="key-term2"> This scene takes place in/an/on .... </span>.
+					  First, in a few words, you'll complete the sentence <span class="key-term2"> This scene takes place in/at/on... </span>.
 					  Examples of reasonable completions include:
 					  <ul>
 					    <li> a bar </li>
@@ -107,8 +105,7 @@
 					    <li> a dessing room </li>
 					  </ul>
 
-					  Next, you'll choose <span class="key-term3"> at least 2 English Wikipedia links </span> that could help a robot understand what is expected, and what is weird, about the provided scene. You'll need to use the search function provided here <a href="https://en.wikipedia.org/wiki/Main_Page">https://en.wikipedia.org/wiki/Main_Page</a> to find the article URLs, and then copy-and-paste from your Internet browser's URL bar. Examples of reasonable types of links include:
-
+					  Next, you'll choose <span class="key-term3"> at least 2 English Wikipedia links </span> (and up to 3) that could help a <strong> robot </strong> understand what is expected, and what is weird, about the provided scene. You'll need to use the search function provided here <a href="https://en.wikipedia.org/wiki/Main_Page">https://en.wikipedia.org/wiki/Main_Page</a> to find the article URLs, and then copy-and-paste from your Internet browser's URL bar. Examples of reasonable links include:
 					  <p></p>
 					  
 					  <ul>
@@ -118,13 +115,16 @@
 					    <li> if the scene is in space, <strong><i>https://en.wikipedia.org/wiki/Outer_space</i></strong> </li>
 					    <li> if the characters were at a Lūʻau, <strong><i>https://en.wikipedia.org/wiki/Lūʻau</i></strong></li>
 					    <li> if the characters were fencing, <strong><i>https://en.wikipedia.org/wiki/Fencing</i></strong> </li>
+					    <li> if the characters are drunk, <strong><i>https://en.wikipedia.org/wiki/Alcohol_intoxication</i></strong> </li>
 					    <li> if the characters are from Sleeping Beauty, <strong><i> https://en.wikipedia.org/wiki/Sleeping_Beauty </i> </strong> </li>
+					    <li> if a character is psychic, <strong><i> https://en.wikipedia.org/wiki/Psychic </i> </strong> </li>
 					  </ul>
 
 					  <strong> Rules for links: </strong>
 					  <ul>
-					    <li> <u> <strong> Provide valid links: </strong> </u> A valid English wikipedia link should begin with "https://en.wikipedia.org/wiki/" and have no section links. Don't provide <strong>https://en.wikipedia.org/wiki/Sleeping_Beauty#Plot</strong>, use <strong>https://en.wikipedia.org/wiki/Sleeping_Beauty</strong>. </li>
-					    <li> <u> <strong> Provide specific/relevant links:</strong> </u> If the scene
+					    <li> <u> <strong> Provide valid links:</strong></u> A valid English wikipedia link should begin with "https://en.wikipedia.org/wiki/" and have no section links. Don't provide <i>https://en.wikipedia.org/wiki/Sleeping_Beauty#Plot</i>, use <i>https://en.wikipedia.org/wiki/Sleeping_Beauty</i>. </li>
+					    <li> <u> <strong> Try not to provide the wikipedia article for the answer you gave in part 1:</strong></u> If you wrote that the scene takes place in "a bar," try your best to provide links beyond the wikipedia article for "bar," unless it's particularly relevant, or there are no other options.</li>
+					    <li> <u> <strong> Provide specific/relevant links:</strong></u> If the scene
 					    happens to contain people,
 					    don't just provide a link
 					    to the wikipedia page for
@@ -140,7 +140,7 @@
 					    <li> <u> <strong> For
 					      proper nouns, specific
 					      is
-					      better: </strong> </u>
+					      better:</strong></u>
 					      linking "Sleeping
 					      Beauty" is better than
 					      "Fairy Tale"; linking
@@ -149,7 +149,7 @@
 					      linking "Barack Obama"
 					      is better than than
 					      "President" </li>
-
+					    </ul>
 					</div>
 				    </div>
                                 </div>
@@ -187,7 +187,7 @@
 					  </div>
 
 					  <div class="col col-10 row justify-content-center mt-3">
-					    <span class="row key-term3 pl-3">These wikipedia links would be helpful for a robot to understand the image:</span>
+					    <span class="row key-term3 pl-3">These wikipedia links would be helpful for a   robot  to understand the image:</span>
 					  </div>
 
 					  <div class="col-10 mt-3">
@@ -217,7 +217,7 @@
 					  </div>
 					  
 					  <div class="col col-10 row justify-content-center mt-3">
-					    <span class="row key-term3 pl-3">These wikipedia links would be helpful for a robot to understand the image:</span>
+					    <span class="row key-term3 pl-3">These wikipedia links would be helpful for a  robot  to understand the image:</span>
 					  </div>
 					  
 					  <div class="col-10 mt-3">
@@ -255,7 +255,9 @@
 				  </div>
 
 				  <div class="col col-10 row justify-content-center mt-3">
-				    <span class="row key-term3 pl-3">These wikipedia links would be helpful for a robot to understand the image:</span>
+				    <span class="row key-term3 pl-3">These wikipedia links would be helpful for a  robot  to understand the image:</span>
+				  </div>
+				  <div class="col col-10 row justify-content-center mt-3" id="warning">
 				  </div>
 				  
 				  <div class="col col-12 row justify-content-center mt-3">
@@ -281,24 +283,7 @@
 				  <div class="col col-12 row justify-content-center">
 				    <textarea rows=1 id="link_3" name ="link_3" style="width:65%"></textarea>
 				  </div>
-
-				  <div class="col col-12 row justify-content-center mt-3">
-				    <span class="row key-term3 pl-3">English Wikipedia Link 4 (optional):</span>
-				  </div>
-
-				  <div class="col col-12 row justify-content-center">
-				    <textarea rows=1 id="link_4" name ="link_4" style="width:65%"></textarea>
-				  </div>
-
-				  <div class="col col-12 row justify-content-center mt-3">
-				    <span class="row key-term3 pl-3">English Wikipedia Link 5 (optional):</span>
-				  </div>
-
-				  <div class="col col-12 row justify-content-center">
-				    <textarea rows=1 id="link_5" name ="link_5" style="width:65%"></textarea>
-				  </div>
-
-				</div>
+				  
 
 				<!-- OPTIONAL FEEDBACK -->
 				<div class="row mt-5">
@@ -315,6 +300,7 @@
                                     <input id="submitButton" onclick="getnext()" type="submit" value="Submit">
 				  </div>
 				</div>
+				</div>
                             </form>
 			</div>
                         <script language='Javascript'>turkSetAssignmentID();</script>
@@ -329,9 +315,34 @@
 		   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 		   
-		   
 		   <!-- MAIN JS -->
 <script id="hitpub_js">
+    $(document).ready(function() {
+        $('#location').on("change keyup paste", function() {
+    	var their_input = $('#location').val();
+    	if (their_input.length == 0){
+    	    $('#warning').text("")
+    	} else {
+    	    $('#warning').html(("Try not to use the wikipedia article for \"" + their_input + "\" unless it's very relevant and/or there are no other options.").italics());
+    	}
+        });
+    
+        var cookie_name = '_wiki_HIT_cookie_v1';
+        
+        $('.collapse').collapse({ 'toggle': false }).on('hidden.bs.collapse', function() {
+    	if (this.id) {
+                localStorage[this.id + cookie_name] = 'true';
+    	}
+        }).on('shown.bs.collapse', function() {
+    	if (this.id) {
+                localStorage.removeItem(this.id + cookie_name);
+    	}
+        }).each(function() {
+    	if (this.id && localStorage[this.id + cookie_name] == 'true' ) {
+                $(this).collapse('hide');
+    	}
+        });
+    });
 
 </script>		   
 		   
