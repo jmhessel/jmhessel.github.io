@@ -72,7 +72,6 @@
                    <div id="hit" class="container">
                         <div class="col-8 offset-2">
                             <div class="accordion" id="hitinfo">
-                                
                                 <!-- INSTRUCTIONS START -->
                                 <div class="card">
                                     <div class="card-header id="instructionsHeading">
@@ -89,8 +88,8 @@
                                             Your job is to rate the quality of the <span class="key-term2">system generation</span> across three axes:</p>
                                             <ul>
                                             <li> <strong>Coherence:</strong> <em> Is the system's generation <u>aligned in meaning/topic with the prompt?</u></em></li>
-                                            <li> <strong>Fluency:</strong> <em> Is the system's generation <u>grammatical and easy-to-read?</u></em> </li>
-                                            <li> <strong>Informativeness:</strong> <em> Is the system's generation <u>interesting, plausible, and not simply repeating the prompt?</u></em> </li>
+                                            <li> <strong>Fluency:</strong> <em> Is the system's generation <u>grammatical, easy-to-read, and not repetitive?</u></em> </li>
+                                            <li> <strong>Overall:</strong> <em> All things considered, how good is the system's completion?</li>
                                             </ul>
 
                                             <p>You will be able to rate each of the three axes on a scale from 1 to 5, with
@@ -99,10 +98,10 @@
                                             <ul>
                                             <li> <strong>Coherence:</strong>
                                                 <ul>
-                                                <li> <strong style="color:green;">5 (excellent):</strong> The system's result is perfectly in line with the semantic meaning defined by the prompt; topically speaking, I could see
-                                                this type of completion appearing in a Wikipedia article after the prompt. </li>
-                                                <li> 4: The system's result is very related to the prompt but with some minor errors that do not affect overall relevance with respect to the prompt.</li>
-                                                <li> 3: The system's result is, to some extent, relevant to the prompt, but some errors/irrelevant parts display minor semantic inconsistency or contradiction.</li>
+                                                <li> <strong style="color:green;">5 (excellent):</strong> The system's result is perfectly in line with the prompt; topically speaking, I could see
+                                                this type of continuation appearing in a Wikipedia article. </li>
+                                                <li> 4: The system's result is closely related to the prompt with some minor errors that do not affect overall relevance to the prompt.</li>
+                                                <li> 3: The system's result is, to some extent, relevant to the prompt, but there are some errors/irrelevant parts that stray from what a human might write.</li>
                                                 <li> 2: At the first glance, the system's result seems somewhat related to the prompt, but the semantic inconsistency can be easily spotted.</li>
                                                 <li> <strong style="color:red;">1 (bad):</strong> The system's result is completely off topic, or is semantically contradictory to the content contained in the prompt.</li>
                                                 </ul>
@@ -110,28 +109,28 @@
                                             
                                             <li> <strong>Fluency:</strong>
                                                 <ul>
-                                                <li> <strong style="color:green;">5 (excellent):</strong> The system's result is human-like, grammatically correct, and very easy to understand.
-                                                This reads as if it were written by a human.</li>
-                                                <li> 4: Very good fluency, but I could probably tell a machine wrote it based on a very minor grammar error or incoherent part.</li>
-                                                <li> 3: The system's result contains minor errors but they do not affect your understanding.</li>
-                                                <li> 2: Mediocre fluency: grammar/language errors are difficult to overlook, but I managed to understand what it was going for.</li>
+                                                <li> <strong style="color:green;">5 (excellent):</strong> The system's result is human-like, grammatically correct, not repetitive, introduces new content beyond the prompt, and is very easy to understand.</li>
+                                                <li> 4: Very good fluency, but I could probably tell a machine wrote it based on a minor grammar error, an awkward reptition of the prompt, or other small mistake.</li>
+                                                <li> 3: The system's result definitely contains minor errors, unnatural repetition, or awkward sentence-by-sentence progression, but I'm able to mostly understand.</li>
+                                                <li> 2: While I managed to read most of the continuation, the grammar/language errors are difficult to overlook, there are many unnatural repetitions, or the continuation doesn't go beyond the prompt at all.</li>
                                                 <li> <strong style="color:red;">1 (bad):</strong> The system's result does not make sense and it is unreadable.</li>
                                                 </ul>
                                             </li>
 
-                                            <li> <strong>Informativeness:</strong>
+                                            <li> <strong>Overall:</strong>
                                                 <ul>
-                                                <li> <strong style="color:green;">5 (excellent):</strong> The system's result is very informative, contains novel content, and seems plausible. In addition, it displays the right level of diversity and it is enjoyable to read.</li>
-                                                <li> 4: The system's output mostly goes beyond the information in the prompt, and it is definitely possible to learn something from it.</li>
-                                                <li> 3: The system's result contains some new information and it displays a certain level of diversity, but it's either too reptitive/detailed or presents at least one dubious fact.</li>
-                                                <li> 2: Newly presented information is largely copied from the prompt, and/or there's significant clearly incorrect information presented.</li>
-                                                <li> <strong style="color:red;">1 (bad):</strong> The system's result is dull, repetitive, and does not have new information. All its content has already been provided in the prompt, or all new information is obviously wrong/nonsensical.</li>
+                                                <li> <strong style="color:green;">5 (excellent):</strong> The system's result is very informative, contains novel content, and seems plausible. It displays the right level of diversity and is enjoyable to read.</li>
+                                                <li> 4: Pretty good.</li>
+                                                <li> 3: Just okay.</li>
+                                                <li> 2: Mediocre.</li>
+                                                <li> <strong style="color:red;">1 (bad):</strong> The system's result is dull, repetitive, difficult to read.
+                                                It doesn't contribute anything new, or, what it does contriubte is obviously wrong/nonsensical.</li>
                                                 </ul>
                                             </li>
-
-                                            <em> For the correctness judgments in "informativeness," there's no need to search on your own to verify the correctness of the presented facts. </em>
-                                            It's okay to just rely on what you know and only deduct points if things are obviously wrong.
-
+                                            <br>
+                                            <em>Note: While you should incorporate correctness into your "Overall" rating (e.g., if the system says "Superman won the World Cup", you should deduct points),
+                                            it's okay to rely on what you know and only deduct for obviously wrong information.
+                                            There's no need to search on your own to verify the correctness of the presented facts. </em>
                                         </div>
                                         
                                     </div>
@@ -150,87 +149,86 @@
                                     <div class="collapse" id="examples" aria-labelledby="examplesHeading" data-parent="#hitinfo">
                                         <div class="card-body">
                                             
-                                        <h3>Example 1 (bad completion):</h3>
+                                            <h3>Example 1 (bad completion):</h3>
 
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <h5><span class="key-term1">Prompt:</span></h5>
-                                                <div class="col-12 align-text-center">
-                                                    <p> ... Animals in the Trout Creek Mountains are adapted to the environment of the High Desert. Pronghorn are common in the open, sagebrush-covered... </p>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h5><span class="key-term1">Prompt:</span></h5>
+                                                    <div class="col-12 align-text-center">
+                                                        <p> ... Animals in the Trout Creek Mountains are adapted to the environment of the High Desert. Pronghorn are common in the open, sagebrush-covered... </p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <h5><span class="key-term2">System's generation <u>(rate this!)</u>:</span></h5>
-                                                <div class="col-12 align-text-center">
-                                                    <p> watershed, where sea lions have become widespread due to habitat loss, and have been the dominant species since the Conquest of the Rocky Mountains.
-                                                    Altogether these animals are often found alone, detached from their surroundings, feeding on other animals, lice, and other similar items.
-                                                    After the commercial logging and expansion of the Rogue River and the construction of the Burnett Basin,
-                                                    the Elk River valley became a common center of pastoral activity. Elk River residents have settled... </p>
+                                            
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h5><span class="key-term2">System's generation <u>(rate this!)</u>:</span></h5>
+                                                    <div class="col-12 align-text-center">
+                                                        <p> watershed, where sea lions have become widespread due to habitat loss, and have been the dominant species since the Conquest of the Rocky Mountains.
+                                                        Altogether these animals are often found alone, detached from their surroundings, feeding on other animals, lice, and other similar items.
+                                                        After the commercial logging and expansion of the Rogue River and the construction of the Burnett Basin,
+                                                        the Elk River valley became a common center of pastoral activity. Elk River residents have settled... </p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <br>
-                                        <ul>
-                                        <li> <strong style="color:lightcoral">Coherence: 2/5</strong> <em>Why?</em> The completion is partly related to animals, but
-                                            the prompt is about the animals in the mountains, while the completion talks about a watershed with sea lions (and then talks about Elk River residents and flowers). </li>
-                                         </li>
-                                        <li> <strong>Fluency: 3/5</strong> <em>Why?</em> The sentences are individually grammatically correct, but they are difficult to read because the topic changes very frequently. </li>
-                                        
-                                        </li>
-                                        <li> <strong  style="color:lightcoral">Informativeness: 2/5</strong>  <em>Why?</em> Each sentence provides new information beyond the prompt,
-                                        but there's a significant amount of obviously incorrect information (e.g., I know sea lions don't eat lice, and wouldn't be a dominant species in the Rocky Mountains).
-                                        Furthermore, the new information is overly diverse, which makes this less informative. </li>
-                                        </ul>
+                                            <br>
+                                            <ul>
+                                            <li> <strong style="color:lightcoral">Coherence: 2/5</strong> <em>Why?</em> The completion is partly related to animals, but
+                                                the prompt is about the animals in the mountains, while the completion talks about a watershed with sea lions (and then talks about Elk River residents and flowers). </li>
+                                            </li>
+                                            <li> <strong>Fluency: 3/5</strong> <em>Why?</em> The sentences are individually grammatically correct without repetition,
+                                            but they are difficult to read because the topic changes very frequently. </li>
+                                            
+                                            </li>
+                                            <li> <strong  style="color:lightcoral">Overall: 2/5</strong>  <em>Why?</em> Each sentence provides new information beyond the prompt,
+                                            but there's a significant amount of obviously incorrect information (e.g., I know sea lions don't eat lice, and wouldn't be a dominant species in the Rocky Mountains).
+                                            Furthermore, while this isn't a repetitive generation, it "jumps around" topically more than it should. </li>
+                                            </ul>
 
-                                        <em> Note: there are other incorrect pieces of information in the system's output (e.g., the Trout Creek Mountains are not in the Rockies). But, there's no need to go research new facts
-                                        --- just look for the obvious mistakes. </em>
+                                            <em> Note: for the "Overall" rating, there are other incorrect pieces of information in the system's output
+                                            (e.g., the Trout Creek Mountains are not in the Rocky Mountains). But only consider factual mistakes that are obvious to you
+                                            without additional research --- there's no need to verify every new fact that the system generates. </em>
 
-                                        <br>
-                                        <br>
-                                        <h3>Example 2 (good completion):</h3>
+                                            <br>
+                                            <br>
+                                            <h3>Example 2 (good completion):</h3>
 
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <h5><span class="key-term1">Prompt:</span></h5>
-                                                <div class="col-12 align-text-center">
-                                                    <p> ... Richmond fell ill the day after the 1986 NASCAR annual banquet during a promotional trip to New York. He was not well enough to begin the 1987 NASCAR season despite... </p>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h5><span class="key-term1">Prompt:</span></h5>
+                                                    <div class="col-12 align-text-center">
+                                                        <p> ... Richmond fell ill the day after the 1986 NASCAR annual banquet during a promotional trip to New York. He was not well enough to begin the 1987 NASCAR season despite... </p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <h5><span class="key-term2">System's generation <u>(rate this!)</u>:</span></h5>
-                                                <div class="col-12 align-text-center">
-                                                    <p>lengthy hospitalization in Cleveland and further rest at home; when Richmond missed the Daytona 500, his condition was reported as double pneumonia.
-                                                    Media later reported that he had tested positive for acquired immune deficiency syndrome (AIDS).
-                                                    He returned to Pocono for the Miller High Life 500 during the middle of the year.
-                                                    Starting third, he led by the fifth lap and ultimately led 82 laps, including the final 46,
-                                                    to win the race by eight car-lengths over Bill Elliott. In the middle of the race, Richmond's car suffered gearbox problems... </p>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h5><span class="key-term2">System's generation <u>(rate this!)</u>:</span></h5>
+                                                    <div class="col-12 align-text-center">
+                                                        <p>lengthy hospitalization in Cleveland and further rest at home; when Richmond missed the Daytona 500, his condition was reported as double pneumonia.
+                                                        Media later reported that he had tested positive for acquired immune deficiency syndrome (AIDS).
+                                                        He returned to Pocono for the Miller High Life 500 during the middle of the year.
+                                                        Starting third, he led by the fifth lap and ultimately led 82 laps, including the final 46,
+                                                        to win the race by eight car-lengths over Bill Elliott. In the middle of the race, Richmond's car suffered gearbox problems... </p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        </br>
-                                        <ul>
-                                        <li> <strong style="color:green">Coherence: 5/5</strong> <em>Why?</em>
-                                        The completion is well-aligned with the prompt, because it continues to describe the health and career of a NASCAR driver. </li>
-                                         </li>
-                                        <li> <strong style="color:green">Fluency: 5/5</strong> <em>Why?</em> The sentences are grammatically correct,
-                                        and flow nicely as a career summary of the NASCAR driver.</li>
-                                        
-                                        </li>
-                                        <li> <strong style="color:green"">Informativeness: 5/5</strong>  <em>Why?</em> The completion doesn't repeat information in the prompt, and also provides interesting new information
-                                        about the driver's career that could definitely be correct.</li>
-                                        </ul>
+                                            </br>
+                                            
+                                            <ul>
+                                                <li> <strong style="color:green">Coherence: 5/5</strong> <em>Why?</em>
+                                                The completion is well-aligned with the prompt, because it continues to describe the health and career of a NASCAR driver. </li>
 
-
+                                                <li> <strong style="color:green">Fluency: 5/5</strong> <em>Why?</em> The sentences are grammatically correct,
+                                                and flow nicely as a career summary of the NASCAR driver.</li>
+                                            
+                                                <li> <strong style="color:green"">Overall: 5/5</strong>  <em>Why?</em> The completion doesn't repeat information in the prompt, and also provides interesting new information
+                                                about the driver's career that could definitely be correct.</li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- EXAMPLES END -->
-
                             </div>
                         </div>
 
@@ -276,7 +274,7 @@
                                                 <option value="5" label="excellent">
                                             </datalist>
                                             <small id="coherenceHelp" class="form-text text-muted" style="min-height:70px;">
-                                                The system's result is, to some extent, relevant to the prompt with some errors that display minor semantic inconsistency or contradiction.
+                                               The system's result is, to some extent, relevant to the prompt, but there are some errors/irrelevant parts that stray from what a human might write.
                                             </small>
                                         </div>
                                     </div>
@@ -287,7 +285,7 @@
                                         <div class="form-group">
                                             <label for="fluency" id="fluencylabel"  style="font-size: 32px"><strong>Fluency: 3/5</strong></label>
                                             </br>
-                                            <small> <em> Is the system's generation <u>grammatical and easy-to-read?</u></em> </small>
+                                            <small> <em> Is the system's generation <u>grammatical, easy-to-read, and not repetitive? </u></em> </small>
                                             </br>
                                             <label class="float-left" style="color:red;">Bad</label>
                                             <label class="float-right" style="color:green;">Excellent</label>
@@ -301,7 +299,7 @@
                                                 <option value="5" label="excellent">
                                             </datalist>
                                             <small id="fluencyHelp" class="form-text text-muted" style="min-height:70px;">
-                                                The system's result contains minor errors but they do not affect your understanding.
+                                                The system's result definitely contains minor errors, unnatural repetition, or awkward sentence-by-sentence progression, but I'm able to mostly understand.
                                             </small>
                                         </div>
                                     </div>
@@ -310,23 +308,23 @@
                                 <div class="row align-content-center">
                                     <div class="col-12 align-content-center">
                                         <div class="form-group">
-                                            <label for="informativeness" id="informativenesslabel" style="font-size: 32px"><strong>Informativeness: 3/5</strong></label>
+                                            <label for="overall" id="overalllabel" style="font-size: 32px"><strong>Overall: 3/5</strong></label>
                                             </br>
-                                            <small> <em> Is the system's generation <u>interesting, plausible, and not simply repeating the prompt?</u></em> </small>
+                                            <small> <em> All things considered, <u>how good is the system's generation?</u> </small>
                                             </br>
                                             <label class="float-left" style="color:red;">Bad</label>
                                             <label class="float-right" style="color:green;">Excellent</label>
                                             </br>
-                                            <input type="range" class="form-control-range" id="informativeness" name="informativeness" min="1" max="5" step="1" value="3" list="informativeness_list">
-                                            <datalist id="informativeness_list">
+                                            <input type="range" class="form-control-range" id="overall" name="overall" min="1" max="5" step="1" value="3" list="overall_list">
+                                            <datalist id="overall_list">
                                                 <option value="1" label="bad">
                                                 <option value="2" label="mediocre">
                                                 <option value="3" label="okay">
                                                 <option value="4" label="good">
                                                 <option value="5" label="excellent">
                                             </datalist>
-                                            <small id="informativenessHelp" class="form-text text-muted" style="min-height:70px;">
-                                                The system's result contains some new information and it displays a certain level of diversity.
+                                            <small id="overallHelp" class="form-text text-muted" style="min-height:70px;">
+                                                Just okay.
                                             </small>
                                         </div>
                                     </div>
@@ -403,16 +401,16 @@
                             var value = $(this).val()
                             if(value == 5) {
                                 $('#coherenceHelp').text(
-                                    "The system's result is perfectly in line with the semantic meaning defined by the prompt; " +
-                                    "topically speaking, I could see this type of completion appearing in a Wikipedia article after the prompt.");
+                                    "The system's result is perfectly in line with the prompt; topically speaking, I could see "+
+                                    "this type of continuation appearing in a Wikipedia article.");
                                 $('#coherencelabel').html('<strong style="color:green;">Coherence: 5/5</stong>');
                             }
                             else if(value == 4) {
-                                $('#coherenceHelp').text("The system's result is very related to the prompt but with some minor errors that do not affect overall relevance with respect to the prompt.");
+                                $('#coherenceHelp').text("The system's result is closely related to the prompt with some minor errors that do not affect overall relevance to the prompt.");
                                 $('#coherencelabel').html('<strong style="color:mediumseagreen;">Coherence: 4/5</stong>');
                             }
                             else if(value == 3) {
-                                $('#coherenceHelp').text("The system's result is, to some extent, relevant to the prompt, but some errors/irrelevant parts display minor semantic inconsistency or contradiction.");
+                                $('#coherenceHelp').text("The system's result is, to some extent, relevant to the prompt, but there are some errors/irrelevant parts that stray from what a human might write.");
                                 $('#coherencelabel').html('<strong>Coherence: 3/5</strong>');
                             }
                             else if(value == 2) {
@@ -429,19 +427,19 @@
                             var value = $(this).val()
                             if(value == 5) {
                                 $('#fluencyHelp').text(
-                                    "The system's result is human-like, grammatically correct, and very easy to understand. This reads as if it were written by a human.");
+                                    "The system's result is human-like, grammatically correct, not repetitive, introduces new content beyond the prompt, and is very easy to understand.");
                                 $('#fluencylabel').html('<strong style="color:green;">Fluency: 5/5</stong>');
                             }
                             else if(value == 4) {
-                                $('#fluencyHelp').text("Very good fluency, but I could probably tell a machine wrote it based on a very minor grammar error or incoherent part.");
+                                $('#fluencyHelp').text("Very good fluency, but I could probably tell a machine wrote it based on a minor grammar error, an awkward reptition of the prompt, or other small mistake.");
                                 $('#fluencylabel').html('<strong style="color:mediumseagreen;">Fluency: 4/5</stong>');
                             }
                             else if(value == 3) {
-                                $('#fluencyHelp').text("The system's result contains minor errors but they do not affect your understanding.");
+                                $('#fluencyHelp').text("The system's result definitely contains minor errors, unnatural repetition, or awkward sentence-by-sentence progression, but I'm able to mostly understand.");
                                 $('#fluencylabel').html('<strong>Fluency: 3/5</strong>');
                             }
                             else if(value == 2) {
-                                $('#fluencyHelp').text("Mediocre fluency: grammar/language errors are difficult to overlook, but I managed to understand what it was going for.");
+                                $('#fluencyHelp').text("While I managed to read most of the continuation, the grammar/language errors are difficult to overlook, there are many unnatural repetitions, or the continuation doesn't go beyond the prompt at all.");
                                 $('#fluencylabel').html('<strong style="color:lightcoral">Fluency: 2/5</strong>');
                             }
                             else if(value == 1) {
@@ -450,29 +448,29 @@
                             }
                         });
                     
-                        $('#informativeness').on('input', function() {
+                        $('#overall').on('input', function() {
                             var value = $(this).val()
                             if(value == 5) {
-                                $('#informativenessHelp').text(
-                                    "The system's result is very informative, contains novel content, and seems plausible. In addition, it displays the right level of diversity and it is enjoyable to read.");
-                                $('#informativenesslabel').html('<strong style="color:green;">Informativeness: 5/5</stong>');
+                                $('#overallHelp').text(
+                                    "The system's result is very informative, contains novel content, and seems plausible. It displays the right level of diversity and is enjoyable to read.");
+                                $('#overalllabel').html('<strong style="color:green;">Overall: 5/5</stong>');
                             }
                             else if(value == 4) {
-                                $('#informativenessHelp').text("The system's output mostly goes beyond the information in the prompt, and it is definitely possible to learn something from it.");
-                                $('#informativenesslabel').html('<strong style="color:mediumseagreen;">Informativeness: 4/5</stong>');
+                                $('#overallHelp').text("Pretty good");
+                                $('#overalllabel').html('<strong style="color:mediumseagreen;">Overall: 4/5</stong>');
                     
                             }
                             else if(value == 3) {
-                                $('#informativenessHelp').text("The system's result contains some new information and it displays a certain level of diversity, but it's either too reptitive/detailed or presents at least one dubious fact.");
-                                $('#informativenesslabel').html('<strong>Informativeness: 3/5</strong>');
+                                $('#overallHelp').text("Just okay.");
+                                $('#overalllabel').html('<strong>Overall: 3/5</strong>');
                             }
                             else if(value == 2) {
-                                $('#informativenessHelp').text("Newly presented information is largely copied from the prompt, and/or there's significant clearly incorrect information presented.");
-                                $('#informativenesslabel').html('<strong style="color:lightcoral">Informativeness: 2/5</strong>');
+                                $('#overallHelp').text("Mediocre.");
+                                $('#overalllabel').html('<strong style="color:lightcoral">Overall: 2/5</strong>');
                             }
                             else if(value == 1) {
-                                $('#informativenessHelp').text("The system's result is dull, repetitive, and does not have new information. All its content has already been provided in the prompt, or all new information is obviously wrong/nonsensical.");
-                                $('#informativenesslabel').html('<strong style="color:red">Informativeness: 1/5</strong>');
+                                $('#overallHelp').text("The system's result is dull, repetitive, difficult to read. It doesn't contribute anything new, or, what it does contriubte is obviously wrong/nonsensical.");
+                                $('#overalllabel').html('<strong style="color:red">Overall: 1/5</strong>');
                             }
                         });
                     
