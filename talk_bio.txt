@@ -1,6 +1,6 @@
-A bio for Jack Hessel to be used for, e.g., talk introductions. Last updated Aug 19, 2023.
+A bio for Jack Hessel to be used for, e.g., talk introductions. Last updated Dec 2, 2023.
 
 
 Bio:
 
-Jack Hessel is a Research Scientist at the Allen Institute for AI. He previously earned a PhD from Cornell. These days, he's working to expand language models with new modalities (e.g., vision) for a more complete view of the world. His work, which spans language processing, machine learning, and computer vision, has been reconized with an ACL 2023 best paper award.
+Jack Hessel is a reseacher at Samaya AI, a knowledge discovery startup. Previously, he was a postdoc+research scientist at the Allen Institute for AI, and before that, he earned a PhD from Cornell. His work, which spans language processing, machine learning, and computer vision, has been reconized with an ACL 2023 best paper award.
