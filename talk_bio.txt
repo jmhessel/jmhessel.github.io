@@ -3,4 +3,4 @@ A bio for Jack Hessel to be used for, e.g., talk introductions. Last updated Dec
 
 Bio:
 
-Jack Hessel is a reseacher at Samaya AI, a knowledge discovery startup. Previously, he was a postdoc+research scientist at the Allen Institute for AI, and before that, he earned a PhD from Cornell. His work, which spans language processing, machine learning, and computer vision, has been reconized with several awards, including ACL 2023 best paper and EMNLP 2023 outstanding paper.
+Jack Hessel is a researcher at Samaya AI, a knowledge discovery startup. Previously, he was a postdoc+research scientist at the Allen Institute for AI, and before that, he earned a PhD from Cornell. His work, which spans language processing, machine learning, and computer vision, has been recognized with several awards, including ACL 2023 best paper and EMNLP 2023 outstanding paper.
